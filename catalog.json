@@ -1,0 +1,586 @@
+[
+  {
+    "id": 0,
+    "name": "Tor Browser",
+    "url": "https://torproject.org",
+    "cat": "Navegadores",
+    "icon": "🌐",
+    "description": "Tor Browser — ferramenta de navegadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 1,
+    "name": "Firefox",
+    "url": "https://firefox.com/pt-BR",
+    "cat": "Navegadores",
+    "icon": "🌐",
+    "description": "Firefox — ferramenta de navegadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 2,
+    "name": "Firefox Focus",
+    "url": "https://firefox.com/pt-BR/mobile/focus",
+    "cat": "Navegadores",
+    "icon": "🌐",
+    "description": "Firefox Focus — ferramenta de navegadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 3,
+    "name": "PikPak",
+    "url": "https://mypikpak.com",
+    "cat": "Nuvem",
+    "icon": "☁️",
+    "description": "PikPak — ferramenta de nuvem. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 4,
+    "name": "Proton Drive",
+    "url": "https://proton.me/drive",
+    "cat": "Nuvem",
+    "icon": "☁️",
+    "description": "Proton Drive — ferramenta de nuvem. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 5,
+    "name": "Proton Mail",
+    "url": "https://proton.me/mail",
+    "cat": "Email e aliases",
+    "icon": "✉️",
+    "description": "Proton Mail — ferramenta de email e aliases. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 6,
+    "name": "Tuta",
+    "url": "https://tuta.com/pt-br",
+    "cat": "Email e aliases",
+    "icon": "✉️",
+    "description": "Tuta — ferramenta de email e aliases. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 7,
+    "name": "SimpleLogin",
+    "url": "https://simplelogin.io",
+    "cat": "Email e aliases",
+    "icon": "✉️",
+    "description": "SimpleLogin — ferramenta de email e aliases. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 8,
+    "name": "Mullvad",
+    "url": "https://mullvad.net",
+    "cat": "VPN",
+    "icon": "🛡️",
+    "description": "Mullvad — ferramenta de vpn. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 9,
+    "name": "Proton VPN",
+    "url": "https://protonvpn.com",
+    "cat": "VPN",
+    "icon": "🛡️",
+    "description": "Proton VPN — ferramenta de vpn. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 10,
+    "name": "Xeovo",
+    "url": "https://xeovo.com",
+    "cat": "VPN",
+    "icon": "🛡️",
+    "description": "Xeovo — ferramenta de vpn. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 11,
+    "name": "Startpage",
+    "url": "https://startpage.com",
+    "cat": "Buscadores",
+    "icon": "🔎",
+    "description": "Startpage — ferramenta de buscadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 12,
+    "name": "SearXNG",
+    "url": "https://github.com/searxng/searxng",
+    "cat": "Buscadores",
+    "icon": "🔎",
+    "description": "SearXNG — ferramenta de buscadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 13,
+    "name": "Monero",
+    "url": "https://getmonero.org",
+    "cat": "Criptomoedas",
+    "icon": "◈",
+    "description": "Monero — ferramenta de criptomoedas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 14,
+    "name": "Cake Wallet",
+    "url": "https://cakewallet.com",
+    "cat": "Criptomoedas",
+    "icon": "◈",
+    "description": "Cake Wallet — ferramenta de criptomoedas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 15,
+    "name": "Bisq",
+    "url": "https://bisq.network",
+    "cat": "Criptomoedas",
+    "icon": "◈",
+    "description": "Bisq — ferramenta de criptomoedas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 16,
+    "name": "Wallet of Satoshi",
+    "url": "https://walletofsatoshi.com",
+    "cat": "Criptomoedas",
+    "icon": "◈",
+    "description": "Wallet of Satoshi — ferramenta de criptomoedas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 17,
+    "name": "YubiKey",
+    "url": "https://yubico.com",
+    "cat": "Autenticação",
+    "icon": "🔑",
+    "description": "YubiKey — ferramenta de autenticação. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 18,
+    "name": "Ente Auth",
+    "url": "https://ente.io/auth",
+    "cat": "Autenticação",
+    "icon": "🔑",
+    "description": "Ente Auth — ferramenta de autenticação. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 19,
+    "name": "Bitwarden",
+    "url": "https://bitwarden.com",
+    "cat": "Senhas",
+    "icon": "🔐",
+    "description": "Bitwarden — ferramenta de senhas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 20,
+    "name": "KeePassXC",
+    "url": "https://keepassxc.org",
+    "cat": "Senhas",
+    "icon": "🔐",
+    "description": "KeePassXC — ferramenta de senhas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 21,
+    "name": "VeraCrypt",
+    "url": "https://veracrypt.fr",
+    "cat": "Criptografia",
+    "icon": "🗝️",
+    "description": "VeraCrypt — ferramenta de criptografia. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 22,
+    "name": "Cryptomator",
+    "url": "https://cryptomator.org",
+    "cat": "Criptografia",
+    "icon": "🗝️",
+    "description": "Cryptomator — ferramenta de criptografia. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 23,
+    "name": "Picocrypt-NG",
+    "url": "https://github.com/Picocrypt-NG/Picocrypt-NG",
+    "cat": "Criptografia",
+    "icon": "🗝️",
+    "description": "Picocrypt-NG — ferramenta de criptografia. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 24,
+    "name": "Signal",
+    "url": "https://signal.org",
+    "cat": "Mensagens",
+    "icon": "💬",
+    "description": "Signal — ferramenta de mensagens. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 25,
+    "name": "Threema",
+    "url": "https://threema.com",
+    "cat": "Mensagens",
+    "icon": "💬",
+    "description": "Threema — ferramenta de mensagens. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 26,
+    "name": "Session",
+    "url": "https://getsession.org",
+    "cat": "Mensagens",
+    "icon": "💬",
+    "description": "Session — ferramenta de mensagens. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 27,
+    "name": "Bitchat",
+    "url": "https://github.com/permissionlesstech/bitchat",
+    "cat": "Mensagens",
+    "icon": "💬",
+    "description": "Bitchat — ferramenta de mensagens. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 28,
+    "name": "OpenStreetMap",
+    "url": "https://openstreetmap.org",
+    "cat": "Mapas",
+    "icon": "🗺️",
+    "description": "OpenStreetMap — ferramenta de mapas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 29,
+    "name": "OsmAnd",
+    "url": "https://osmand.net",
+    "cat": "Mapas",
+    "icon": "🗺️",
+    "description": "OsmAnd — ferramenta de mapas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 30,
+    "name": "Tails",
+    "url": "https://tails.net",
+    "cat": "Sistemas",
+    "icon": "💻",
+    "description": "Tails — ferramenta de sistemas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 31,
+    "name": "iShredder",
+    "url": "https://protectstar.com/pt/products/ishredder",
+    "cat": "Limpeza",
+    "icon": "🧹",
+    "description": "iShredder — ferramenta de limpeza. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 32,
+    "name": "DBAN",
+    "url": "https://dban.org",
+    "cat": "Limpeza",
+    "icon": "🧹",
+    "description": "DBAN — ferramenta de limpeza. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 33,
+    "name": "BleachBit",
+    "url": "https://bleachbit.org",
+    "cat": "Limpeza",
+    "icon": "🧹",
+    "description": "BleachBit — ferramenta de limpeza. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 34,
+    "name": "SimSup",
+    "url": "https://kycnot.me/service/simsup",
+    "cat": "SIM e números",
+    "icon": "📱",
+    "description": "SimSup — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 35,
+    "name": "NadaNada",
+    "url": "https://kycnot.me/service/nadanada",
+    "cat": "SIM e números",
+    "icon": "📱",
+    "description": "NadaNada — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 36,
+    "name": "Crypton",
+    "url": "https://kycnot.me/service/crypton",
+    "cat": "SIM e números",
+    "icon": "📱",
+    "description": "Crypton — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 37,
+    "name": "Silent Link",
+    "url": "https://silent.link",
+    "cat": "SIM e números",
+    "icon": "📱",
+    "description": "Silent Link — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 38,
+    "name": "Stealths",
+    "url": "https://kycnot.me/service/stealths",
+    "cat": "SIM e números",
+    "icon": "📱",
+    "description": "Stealths — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 39,
+    "name": "Hero SMS",
+    "url": "https://hero-sms.com/pt",
+    "cat": "SIM e números",
+    "icon": "📱",
+    "description": "Hero SMS — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 40,
+    "name": "OneSimCard",
+    "url": "https://onesimcard.com",
+    "cat": "SIM e números",
+    "icon": "📱",
+    "description": "OneSimCard — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 41,
+    "name": "Telera",
+    "url": "https://app2.telera.com.br",
+    "cat": "SIM e números",
+    "icon": "📱",
+    "description": "Telera — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 42,
+    "name": "Have I Been Pwned",
+    "url": "https://haveibeenpwned.com",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Have I Been Pwned — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 43,
+    "name": "Behind the Email",
+    "url": "https://behindtheemail.com",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Behind the Email — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 44,
+    "name": "JustDeleteMe",
+    "url": "https://justdeleteme.xyz/en",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "JustDeleteMe — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 45,
+    "name": "Who.is",
+    "url": "https://who.is",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Who.is — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 46,
+    "name": "Registro.br WHOIS",
+    "url": "https://registro.br/tecnologia/ferramentas/whois",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Registro.br WHOIS — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 47,
+    "name": "Shodan",
+    "url": "https://shodan.io",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Shodan — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 48,
+    "name": "PimEyes",
+    "url": "https://pimeyes.com/en",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "PimEyes — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 49,
+    "name": "Epieos",
+    "url": "https://epieos.com",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Epieos — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 50,
+    "name": "Sherlock",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Sherlock — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 51,
+    "name": "Maigret",
+    "url": "https://github.com/soxoj/maigret",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Maigret — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 52,
+    "name": "OSINT Arsenal",
+    "url": "https://github.com/rawfilejson/awesome-osint-arsenal",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "OSINT Arsenal — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 53,
+    "name": "Google Hacking Database",
+    "url": "https://exploit-db.com/google-hacking-database",
+    "cat": "OSINT e exposição",
+    "icon": "🕵️",
+    "description": "Google Hacking Database — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 54,
+    "name": "ExifTool",
+    "url": "https://exiftool.org",
+    "cat": "Metadados",
+    "icon": "📑",
+    "description": "ExifTool — ferramenta de metadados. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 55,
+    "name": "MAT2",
+    "url": "https://0xacab.org/jvoisin/mat2",
+    "cat": "Metadados",
+    "icon": "📑",
+    "description": "MAT2 — ferramenta de metadados. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 56,
+    "name": "FFmpeg",
+    "url": "https://ffmpeg.org",
+    "cat": "Metadados",
+    "icon": "📑",
+    "description": "FFmpeg — ferramenta de metadados. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 57,
+    "name": "Dangerzone",
+    "url": "https://dangerzone.rocks",
+    "cat": "Ameaças",
+    "icon": "🦠",
+    "description": "Dangerzone — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 58,
+    "name": "ClamAV",
+    "url": "https://clamav.net",
+    "cat": "Ameaças",
+    "icon": "🦠",
+    "description": "ClamAV — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 59,
+    "name": "ClamTk",
+    "url": "https://github.com/dave-theunsub/clamtk",
+    "cat": "Ameaças",
+    "icon": "🦠",
+    "description": "ClamTk — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 60,
+    "name": "Hybrid Analysis",
+    "url": "https://hybrid-analysis.com",
+    "cat": "Ameaças",
+    "icon": "🦠",
+    "description": "Hybrid Analysis — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 61,
+    "name": "ANY.RUN",
+    "url": "https://app.any.run",
+    "cat": "Ameaças",
+    "icon": "🦠",
+    "description": "ANY.RUN — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 62,
+    "name": "VirusTotal",
+    "url": "https://virustotal.com",
+    "cat": "Ameaças",
+    "icon": "🦠",
+    "description": "VirusTotal — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 63,
+    "name": "MetaDefender",
+    "url": "https://metadefender.com",
+    "cat": "Ameaças",
+    "icon": "🦠",
+    "description": "MetaDefender — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 64,
+    "name": "Autopsy",
+    "url": "https://autopsy.com",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "Autopsy — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 65,
+    "name": "The Sleuth Kit",
+    "url": "https://sleuthkit.org",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "The Sleuth Kit — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 66,
+    "name": "bulk_extractor",
+    "url": "https://github.com/simsong/bulk_extractor",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "bulk_extractor — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 67,
+    "name": "dc3dd",
+    "url": "https://kali.org/tools/dc3dd",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "dc3dd — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 68,
+    "name": "FTK Imager",
+    "url": "https://exterro.com/digital-forensics-software/ftk-imager",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "FTK Imager — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 69,
+    "name": "Hashcat",
+    "url": "https://hashcat.net/hashcat",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "Hashcat — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 70,
+    "name": "John the Ripper",
+    "url": "https://openwall.com/john",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "John the Ripper — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 71,
+    "name": "Linux Leo",
+    "url": "https://linuxleo.com",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "Linux Leo — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  },
+  {
+    "id": 72,
+    "name": "Volatility",
+    "url": "https://github.com/volatilityfoundation/volatility",
+    "cat": "Forense digital",
+    "icon": "🧬",
+    "description": "Volatility — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+  }
+]

@@ -1,0 +1,1 @@
+{"name": "PrivacyPack — Security Atlas", "short_name": "PrivacyPack", "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#09111b", "theme_color": "#09111b", "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]}
