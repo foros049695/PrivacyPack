@@ -1,8 +1,20 @@
-# PrivacyPack Wiki V5 — grafo de ferramentas + central de instalação
+# PrivacyPack Wiki V5.1 — grafo de ferramentas + central de instalação
 
 PWA estática e independente, inspirada **na interação de árvore** da [DistroLinux Wiki](https://distrolinux.com.br/en/wiki/). O projeto não reutiliza códigos ou estilos de terceiros. Interface em português do Brasil com grafo espacial (Canvas 2D com projeção 3D), ramificações por sistema e categoria, fichas detalhadas, comparação, pesquisa, favoritos e notas.
 
-## Novidades V5
+## Otimização V5.1 — desempenho e fluidez
+
+- Removido o bloqueio fixo de **32 ms por quadro** (que limitava a animação a cerca de 31 FPS); perfis Automático/Alta qualidade têm alvo de **até 60 FPS** e Economia tem alvo de 30 FPS. A taxa efetiva depende do aparelho e do navegador.
+- **Camada estática em cache**: círculos, sombras, ícones, textos, grade e linhas são redesenhados apenas quando uma seleção, câmera, janela ou imagem muda. Em quadros intermediários são desenhadas apenas as partículas por cima de uma cópia da camada estática.
+- **Topologia em cache**: árvore de sistemas/categorias/aplicativos não é construída a cada quadro.
+- **Afastamento espacial**: colisões dos nós calculadas usando vizinhança em grade e apenas em quadros que exigem reconstrução; substitui o teste de todos os pares por 10 passadas contínuas.
+- Ajuste de resolução interna do Canvas para economizar processamento em telas de alta densidade; opção de Alta qualidade caso prefira mais nitidez.
+- Indicador de FPS no canto do mapa; opção de desligar motion flow mantém desenho sob demanda.
+- Dados existentes, notas, favoritos, comparador e guias de instalação continuam compatíveis.
+
+**Como mudar:** Configurações ⚙ → Qualidade e desempenho → Automático, Alta qualidade ou Economia. Se seu dispositivo for lento, experimente Automático e desative Motion flow; o modo Economia limita o desenho a 30 FPS para reduzir o consumo.
+
+## Recursos da V5 preservados
 
 - **Central de instalação** acessível em cada ficha com o botão **↓ Instruções de instalação**.
 - Uma **grade de sistemas compatíveis** para o aplicativo escolhido, sempre com ícone do sistema: Android, Linux, Windows, macOS, Web, Servidor, Live USB ou Hardware, conforme o catálogo. Sistemas incompatíveis não são oferecidos na ficha.
@@ -72,6 +84,10 @@ Para todos os detalhes, veja [INSTALL_ANDROID.md](INSTALL_ANDROID.md).
 - `sw.js`: aumente a versão do cache ao publicar novas alterações para reduzir problemas com atualizações antigas.
 
 **Para acrescentar um app:** edite `catalog.json`, acrescente seu guia específico em `tools/build_install_guides.py`, execute `python3 tools/build_install_guides.py` e `python3 tools/make_manifest.py`, revise os dados e o resultado.
+
+## Medição de desempenho
+
+Em um teste de navegação com Chromium headless a 1600 × 900, a V5.1 exibiu **59–60 FPS** no perfil Automático, inclusive com a árvore expandida, e **30 FPS** no perfil Economia. Esses valores são observações daquele ambiente, não resultados garantidos em Android, no MX Linux ou em GPUs específicas. O limite fixo de ~31 FPS da V5 foi retirado; o trabalho de rasterização do grafo agora ocorre principalmente quando a câmera ou conteúdo muda.
 
 ## Auditoria visual e testes
 

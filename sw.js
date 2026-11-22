@@ -1,5 +1,5 @@
 /* PrivacyPack v5 service worker — cache same origin, optionally cache remote favicons. */
-const CACHE='privacypack-wiki-v5-r1', ICON_CACHE='privacypack-remote-icons-v5';
+const CACHE='privacypack-wiki-v5-1-r1', ICON_CACHE='privacypack-remote-icons-v5';
 const ESSENTIAL=['./','./index.html','./app.js','./style.css','./catalog.json','./categories.json','./install-guides.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./assets-manifest.json'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{let c=await caches.open(CACHE);await c.addAll(ESSENTIAL);let files=[];try{let r=await fetch('./assets-manifest.json');if(r.ok)files=await r.json()}catch{}for(let i=0;i<files.length;i+=30){await Promise.all(files.slice(i,i+30).map(file=>c.add(file).catch(()=>{})))}await self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{let keys=await caches.keys();await Promise.all(keys.filter(k=>((k.startsWith('privacypack-wiki-v4-')||k.startsWith('privacypack-wiki-v5-'))||k.startsWith('privacypack-atlas-'))&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim()})()));

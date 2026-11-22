@@ -21,3 +21,8 @@
 /* V5 polish: full platform choice visible on roomy desktop, wrapping install variants on mobile. */
 @media(min-width:901px){.filters{max-width:min(100%,1040px);width:min(100%,1040px)}.topic-filters{max-width:min(100%,1040px);width:min(100%,1040px)}}
 @media(max-width:600px){.install-versions{flex-wrap:wrap;overflow:visible}.install-version{flex:1 0 calc(50% - 8px);max-width:none}.install-os-option{min-width:0}}
+
+/* V5.1 — lightweight renderer controls and frame monitor */
+.fps-meter{display:inline-block;margin-left:13px;padding:3px 6px;border-radius:6px;color:#b0d8c7;background:#17231fbd;font:10px ui-monospace,monospace;letter-spacing:.4px}
+.setting select{max-width:195px;min-width:155px;border:1px solid #57524c;border-radius:9px;background:#282625;color:#f3f3ef;padding:9px;font-size:11px;flex-shrink:0}
+@media(max-width:600px){.setting{flex-wrap:wrap}.setting select{width:100%;max-width:none}}

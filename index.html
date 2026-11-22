@@ -26,7 +26,7 @@
    <div id="filters" class="filters" aria-label="Filtrar por plataforma"></div>
    <div id="categoryTags" class="topic-filters" aria-label="Filtros de função"></div>
   </div>
-  <div class="map-stamp"><span class="map-live"></span> <span id="mapStatus">WIKI / LOADING</span></div>
+  <div class="map-stamp"><span class="map-live"></span> <span id="mapStatus">WIKI / LOADING</span><span class="fps-meter" id="fpsMeter" title="Quadros renderizados por segundo">-- FPS</span></div>
   <div id="tooltip" class="tooltip" hidden></div>
   <div class="map-bottom">
    <div class="helper"><span class="help-dot">?</span><span><b>Explore a árvore.</b> Toque nos círculos para abrir os ramos.<small>Arraste para mover · Shift + arraste para orbitar · pinça para zoom</small></span><button id="hideTip" aria-label="Ocultar instruções">×</button></div>
@@ -62,10 +62,11 @@
 </section>
 <section id="settings" class="overlay" hidden role="dialog" aria-modal="true" aria-label="Configurações"><div class="settings-window"><header class="drawer-header"><div><small>PERSONAL WIKI</small><h2>Configurações</h2></div><button id="settingsClose" class="round-close" aria-label="Fechar configurações">×</button></header>
  <label class="setting"><span><b>Motion flow e profundidade</b><small>Movimento de partículas, inércia e efeito de perspectiva</small></span><input type="checkbox" id="motionSwitch" checked></label>
+ <label class="setting"><span><b>Qualidade e desempenho</b><small>Automático prioriza fluidez, Alta prioriza nitidez, Economia reduz uso de bateria e GPU.</small></span><select id="performanceSelect" aria-label="Perfil gráfico"><option value="auto">Automático · 60 FPS</option><option value="quality">Alta qualidade · 60 FPS</option><option value="eco">Economia · 30 FPS</option></select></label>
  <label class="setting"><span><b>Ícones reais de serviços online</b><small>Prioriza logos locais; para os demais, consulta favicons de sites, usando um serviço externo. Essa consulta revela o domínio ao provedor.</small></span><input type="checkbox" id="onlineIconsSwitch" checked></label>
  <label class="setting"><span><b>Salvar ícones para offline</b><small>Pré-carrega os favicons disponíveis para acesso posterior sem internet (o primeiro carregamento requer conexão).</small></span><button id="prefetchBtn">Baixar ícones</button></label>
  <div class="settings-buttons"><button id="backupBtn">↓ Exportar favoritos e notas</button><button id="restoreBtn">↑ Importar backup</button><button id="refreshBtn">↻ Verificar atualização</button><input id="backupFile" type="file" accept="application/json" hidden></div>
- <p class="privacy-note">Não coloque senhas, seeds ou chaves privadas nas notas. Os dados ficam no armazenamento local deste navegador; o catálogo é público, mas suas notas não são enviadas ao GitHub.</p><small id="appVersion">PRIVACYPACK / V5</small></div></section>
+ <p class="privacy-note">Não coloque senhas, seeds ou chaves privadas nas notas. Os dados ficam no armazenamento local deste navegador; o catálogo é público, mas suas notas não são enviadas ao GitHub.</p><small id="appVersion">PRIVACYPACK / V5.1</small></div></section>
 <div id="toast" class="toast" aria-live="polite"></div>
 <script src="./app.js" defer></script>
 </div>
