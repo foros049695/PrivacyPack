@@ -1,1 +1,24 @@
-{"name": "PrivacyPack — Security Atlas", "short_name": "PrivacyPack", "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#09111b", "theme_color": "#09111b", "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]}
+{
+  "id": "./",
+  "name": "PrivacyPack — Atlas 3D",
+  "short_name": "PrivacyPack",
+  "description": "Atlas 3D offline de privacidade, segurança, ferramentas OSINT e aplicativos por plataforma",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#070e19",
+  "theme_color": "#080f1d",
+  "orientation": "any",
+  "lang": "pt-BR",
+  "categories": ["utilities", "productivity", "education"],
+  "icons": [
+    {"src":"./assets/icon-192.png", "sizes":"192x192", "type":"image/png", "purpose":"any"},
+    {"src":"./assets/icon-512.png", "sizes":"512x512", "type":"image/png", "purpose":"any maskable"},
+    {"src":"./assets/icon.svg", "sizes":"any", "type":"image/svg+xml", "purpose":"any"}
+  ],
+  "shortcuts": [
+    {"name":"Explorar ferramentas", "short_name":"Catálogo", "url":"./#catalogo"},
+    {"name":"Mapa de ferramentas", "short_name":"Atlas", "url":"./#atlas"}
+  ]
+}

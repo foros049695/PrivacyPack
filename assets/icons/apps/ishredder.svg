@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Identificador offline iShredder">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1b9bb" stop-opacity=".39"/><stop offset="1" stop-color="#0a1727"/></linearGradient></defs>
+<rect x="2" y="2" width="92" height="92" rx="24" fill="#10212c" stroke="#f1b9bb" stroke-opacity=".72" stroke-width="2"/>
+<rect x="9" y="9" width="78" height="78" rx="19" fill="url(#g)"/>
+<path d="M18 23H29M67 73H78" stroke="#f1b9bb" stroke-width="3" stroke-linecap="round"/>
+<text x="48" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="800" fill="#f5fcff">IS</text>
+</svg>

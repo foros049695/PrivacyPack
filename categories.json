@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Navegadores",
+    "slug": "navegadores",
+    "glyph": "🌐",
+    "color": "#5fdbd3",
+    "count": 3
+  },
+  {
+    "name": "Nuvem",
+    "slug": "nuvem",
+    "glyph": "☁",
+    "color": "#cbb6ff",
+    "count": 3
+  },
+  {
+    "name": "Email e aliases",
+    "slug": "email-e-aliases",
+    "glyph": "✉",
+    "color": "#eeab79",
+    "count": 4
+  },
+  {
+    "name": "VPN",
+    "slug": "vpn",
+    "glyph": "🛡",
+    "color": "#8ec9ff",
+    "count": 3
+  },
+  {
+    "name": "Buscadores",
+    "slug": "buscadores",
+    "glyph": "⌕",
+    "color": "#a6e0af",
+    "count": 2
+  },
+  {
+    "name": "Criptomoedas",
+    "slug": "criptomoedas",
+    "glyph": "◈",
+    "color": "#e2bbfa",
+    "count": 4
+  },
+  {
+    "name": "Autenticação",
+    "slug": "autenticacao",
+    "glyph": "🔑",
+    "color": "#e1b88d",
+    "count": 3
+  },
+  {
+    "name": "Senhas",
+    "slug": "senhas",
+    "glyph": "🔐",
+    "color": "#81d7df",
+    "count": 2
+  },
+  {
+    "name": "Criptografia",
+    "slug": "criptografia",
+    "glyph": "🔒",
+    "color": "#c0bcf3",
+    "count": 4
+  },
+  {
+    "name": "Mensagens",
+    "slug": "mensagens",
+    "glyph": "💬",
+    "color": "#d5d588",
+    "count": 4
+  },
+  {
+    "name": "Mapas",
+    "slug": "mapas",
+    "glyph": "⌖",
+    "color": "#81b6fc",
+    "count": 3
+  },
+  {
+    "name": "Sistemas",
+    "slug": "sistemas",
+    "glyph": "💻",
+    "color": "#b3eac8",
+    "count": 1
+  },
+  {
+    "name": "Limpeza",
+    "slug": "limpeza",
+    "glyph": "✧",
+    "color": "#f1b9bb",
+    "count": 3
+  },
+  {
+    "name": "SIM e números",
+    "slug": "sim-e-numeros",
+    "glyph": "▣",
+    "color": "#b7c6f2",
+    "count": 8
+  },
+  {
+    "name": "OSINT e exposição",
+    "slug": "osint-e-exposicao",
+    "glyph": "◎",
+    "color": "#b3d9be",
+    "count": 12
+  },
+  {
+    "name": "Metadados",
+    "slug": "metadados",
+    "glyph": "▤",
+    "color": "#5fdbd3",
+    "count": 3
+  },
+  {
+    "name": "Ameaças",
+    "slug": "ameacas",
+    "glyph": "⚠",
+    "color": "#cbb6ff",
+    "count": 7
+  },
+  {
+    "name": "Forense digital",
+    "slug": "forense-digital",
+    "glyph": "◉",
+    "color": "#eeab79",
+    "count": 9
+  },
+  {
+    "name": "Arquivos e backup",
+    "slug": "arquivos-e-backup",
+    "glyph": "▥",
+    "color": "#8ec9ff",
+    "count": 3
+  },
+  {
+    "name": "Administração Android",
+    "slug": "administracao-android",
+    "glyph": "⌘",
+    "color": "#a6e0af",
+    "count": 4
+  },
+  {
+    "name": "Auditoria de senhas",
+    "slug": "auditoria-de-senhas",
+    "glyph": "⛨",
+    "color": "#e2bbfa",
+    "count": 1
+  },
+  {
+    "name": "Tradução e utilidades",
+    "slug": "traducao-e-utilidades",
+    "glyph": "文",
+    "color": "#e1b88d",
+    "count": 1
+  },
+  {
+    "name": "Firewall e rede",
+    "slug": "firewall-e-rede",
+    "glyph": "⛨",
+    "color": "#81d7df",
+    "count": 3
+  },
+  {
+    "name": "Downloads e mídia",
+    "slug": "downloads-e-midia",
+    "glyph": "↓",
+    "color": "#c0bcf3",
+    "count": 2
+  },
+  {
+    "name": "Privacidade Android",
+    "slug": "privacidade-android",
+    "glyph": "◌",
+    "color": "#d5d588",
+    "count": 2
+  },
+  {
+    "name": "Manutenção Android",
+    "slug": "manutencao-android",
+    "glyph": "✧",
+    "color": "#81b6fc",
+    "count": 1
+  },
+  {
+    "name": "Mapas e coordenação",
+    "slug": "mapas-e-coordenacao",
+    "glyph": "⌖",
+    "color": "#b3eac8",
+    "count": 3
+  },
+  {
+    "name": "Distribuição de apps",
+    "slug": "distribuicao-de-apps",
+    "glyph": "⬡",
+    "color": "#f1b9bb",
+    "count": 3
+  },
+  {
+    "name": "Isolamento Android",
+    "slug": "isolamento-android",
+    "glyph": "▦",
+    "color": "#b7c6f2",
+    "count": 2
+  },
+  {
+    "name": "Tor e anonimato",
+    "slug": "tor-e-anonimato",
+    "glyph": "◉",
+    "color": "#b3d9be",
+    "count": 1
+  }
+]

@@ -1,586 +1,2590 @@
 [
   {
-    "id": 0,
+    "id": "tor-browser",
+    "legacyId": 0,
     "name": "Tor Browser",
+    "cat": "Navegadores",
     "url": "https://torproject.org",
-    "cat": "Navegadores",
-    "icon": "🌐",
-    "description": "Tor Browser — ferramenta de navegadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Navegador ajustado para reduzir fingerprinting e encaminhar conexões pela rede Tor; permite visitar endereços .onion.",
+    "features": "Circuitos Tor; isolamento de sites; proteção contra rastreadores.",
+    "cautions": "Anonimato não é absoluto: login pessoal, downloads inseguros e comportamento do usuário podem identificá-lo.",
+    "source": "original",
+    "emoji": "🌐",
+    "aliases": [],
+    "icon": "assets/icons/apps/tor-browser.svg",
+    "keywords": [
+      "aplicativo",
+      "navegadores"
+    ]
   },
   {
-    "id": 1,
+    "id": "firefox",
+    "legacyId": 1,
     "name": "Firefox",
+    "cat": "Navegadores",
     "url": "https://firefox.com/pt-BR",
-    "cat": "Navegadores",
-    "icon": "🌐",
-    "description": "Firefox — ferramenta de navegadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Navegador livre da Mozilla com proteção contra rastreamento e suporte a extensões e perfis.",
+    "features": "Bloqueio de rastreadores; extensões; configurações de privacidade.",
+    "cautions": "Não oferece, por padrão, anonimato da rede Tor; extensões excessivas podem aumentar singularidade.",
+    "source": "original",
+    "emoji": "🌐",
+    "aliases": [],
+    "icon": "assets/icons/apps/firefox.svg",
+    "keywords": [
+      "aplicativo",
+      "navegadores"
+    ]
   },
   {
-    "id": 2,
+    "id": "firefox-focus",
+    "legacyId": 2,
     "name": "Firefox Focus",
-    "url": "https://firefox.com/pt-BR/mobile/focus",
     "cat": "Navegadores",
-    "icon": "🌐",
-    "description": "Firefox Focus — ferramenta de navegadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://firefox.com/pt-BR/mobile/focus",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Navegador móvel minimalista para pesquisas rápidas, bloqueio de rastreadores e exclusão simples do histórico local.",
+    "features": "Sessões curtas; limpeza rápida; bloqueio de publicidade e rastreamento.",
+    "cautions": "Não substitui VPN/Tor e limpar o histórico não apaga registros de provedores ou dos sites.",
+    "source": "original",
+    "emoji": "🌐",
+    "aliases": [],
+    "icon": "assets/icons/apps/firefox-focus.svg",
+    "keywords": [
+      "aplicativo",
+      "navegadores"
+    ]
   },
   {
-    "id": 3,
+    "id": "pikpak",
+    "legacyId": 3,
     "name": "PikPak",
+    "cat": "Nuvem",
     "url": "https://mypikpak.com",
-    "cat": "Nuvem",
-    "icon": "☁️",
-    "description": "PikPak — ferramenta de nuvem. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Windows",
+      "macOS",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Armazenamento em nuvem com downloads remotos por links e torrent, útil para centralizar arquivos e bibliotecas multimídia.",
+    "features": "Cloud download; organização; acesso remoto a arquivos.",
+    "cautions": "Não assumir criptografia ponta a ponta ou sigilo dos arquivos; armazenamento e planos variam.",
+    "source": "original",
+    "emoji": "☁️",
+    "aliases": [],
+    "icon": "assets/icons/apps/pikpak.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "nuvem"
+    ]
   },
   {
-    "id": 4,
+    "id": "proton-drive",
+    "legacyId": 4,
     "name": "Proton Drive",
-    "url": "https://proton.me/drive",
     "cat": "Nuvem",
-    "icon": "☁️",
-    "description": "Proton Drive — ferramenta de nuvem. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://proton.me/drive",
+    "platforms": [
+      "Android",
+      "Windows",
+      "macOS",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Armazenamento de arquivos com criptografia ponta a ponta para backups e colaboração com controle de acesso.",
+    "features": "Backup; sincronização; compartilhamento protegido.",
+    "cautions": "Avalie limites do plano, suporte do cliente em cada sistema e metadados operacionais.",
+    "source": "original",
+    "emoji": "☁️",
+    "aliases": [],
+    "icon": "assets/icons/apps/proton-drive.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "nuvem"
+    ]
   },
   {
-    "id": 5,
+    "id": "proton-mail",
+    "legacyId": 5,
     "name": "Proton Mail",
+    "cat": "Email e aliases",
     "url": "https://proton.me/mail",
-    "cat": "Email e aliases",
-    "icon": "✉️",
-    "description": "Proton Mail — ferramenta de email e aliases. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Correio eletrônico com criptografia automática entre contas Proton e opções de proteção para destinatários externos.",
+    "features": "Mensagens protegidas; aliases por integração; domínios personalizados.",
+    "cautions": "E-mail comum fora do ecossistema pode não estar protegido ponta a ponta sem recursos extras.",
+    "source": "original",
+    "emoji": "✉️",
+    "aliases": [],
+    "icon": "assets/icons/apps/proton-mail.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "email",
+      "aliases"
+    ]
   },
   {
-    "id": 6,
+    "id": "tuta",
+    "legacyId": 6,
     "name": "Tuta",
+    "cat": "Email e aliases",
     "url": "https://tuta.com/pt-br",
-    "cat": "Email e aliases",
-    "icon": "✉️",
-    "description": "Tuta — ferramenta de email e aliases. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Serviço de e-mail privado que criptografa mensagens e outros dados suportados no seu ecossistema.",
+    "features": "Correio e calendário criptografados; clientes próprios.",
+    "cautions": "Trocas com provedores convencionais exigem analisar métodos e limitações da criptografia.",
+    "source": "original",
+    "emoji": "✉️",
+    "aliases": [
+      "Tutanota"
+    ],
+    "icon": "assets/icons/apps/tuta.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "email",
+      "aliases"
+    ]
   },
   {
-    "id": 7,
+    "id": "simplelogin",
+    "legacyId": 7,
     "name": "SimpleLogin",
-    "url": "https://simplelogin.io",
     "cat": "Email e aliases",
-    "icon": "✉️",
-    "description": "SimpleLogin — ferramenta de email e aliases. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://simplelogin.io",
+    "platforms": [
+      "Android",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Gerencia aliases descartáveis ou persistentes que encaminham mensagens para o endereço real sem expô-lo em cadastros.",
+    "features": "Aliases por serviço; desativação; encaminhamento.",
+    "cautions": "O provedor de alias ainda é um intermediário e não oferece anonimato automático.",
+    "source": "original",
+    "emoji": "✉️",
+    "aliases": [],
+    "icon": "assets/icons/apps/simplelogin.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "email",
+      "aliases"
+    ]
   },
   {
-    "id": 8,
+    "id": "mullvad",
+    "legacyId": 8,
     "name": "Mullvad",
+    "cat": "VPN",
     "url": "https://mullvad.net",
-    "cat": "VPN",
-    "icon": "🛡️",
-    "description": "Mullvad — ferramenta de vpn. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "VPN com foco em minimização de dados, clientes abertos e opção de cadastro por número de conta.",
+    "features": "Túnel WireGuard; ocultação do IP perante sites; configuração simplificada.",
+    "cautions": "VPN transfere confiança ao provedor e não torna navegação ou pagamentos intrinsecamente anônimos.",
+    "source": "original",
+    "emoji": "🛡️",
+    "aliases": [],
+    "icon": "assets/icons/apps/mullvad.svg",
+    "keywords": [
+      "aplicativo",
+      "vpn"
+    ]
   },
   {
-    "id": 9,
+    "id": "proton-vpn",
+    "legacyId": 9,
     "name": "Proton VPN",
+    "cat": "VPN",
     "url": "https://protonvpn.com",
-    "cat": "VPN",
-    "icon": "🛡️",
-    "description": "Proton VPN — ferramenta de vpn. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Rede privada virtual que criptografa a conexão até o servidor de saída e oferece diferentes regiões e planos.",
+    "features": "Túnel VPN; opções gratuitas e pagas; bloqueio de tráfego malicioso em certos planos.",
+    "cautions": "Não equivale à rede Tor; podem existir restrições de plataforma ou plano.",
+    "source": "original",
+    "emoji": "🛡️",
+    "aliases": [],
+    "icon": "assets/icons/apps/proton-vpn.svg",
+    "keywords": [
+      "aplicativo",
+      "vpn"
+    ]
   },
   {
-    "id": 10,
+    "id": "xeovo",
+    "legacyId": 10,
     "name": "Xeovo",
-    "url": "https://xeovo.com",
     "cat": "VPN",
-    "icon": "🛡️",
-    "description": "Xeovo — ferramenta de vpn. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://xeovo.com",
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo/Configuração",
+    "summary": "Serviço VPN com foco em WireGuard e acesso por configurações de cliente em diversos sistemas.",
+    "features": "Perfis de VPN; diferentes localizações e servidores.",
+    "cautions": "É necessário verificar cobertura, políticas de operação e documentação atual.",
+    "source": "original",
+    "emoji": "🛡️",
+    "aliases": [],
+    "icon": "assets/icons/apps/xeovo.svg",
+    "keywords": [
+      "aplicativo/configuração",
+      "vpn"
+    ]
   },
   {
-    "id": 11,
+    "id": "startpage",
+    "legacyId": 11,
     "name": "Startpage",
+    "cat": "Buscadores",
     "url": "https://startpage.com",
-    "cat": "Buscadores",
-    "icon": "🔎",
-    "description": "Startpage — ferramenta de buscadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Mecanismo de busca com ênfase em privacidade que obtém resultados de parceiros sem expor a pesquisa da mesma forma ao buscador de origem.",
+    "features": "Pesquisa web; proteção contra rastreamento; acesso pelo navegador.",
+    "cautions": "Os links visitados ainda podem rastrear o usuário; disponibilidade dos recursos muda.",
+    "source": "original",
+    "emoji": "🔎",
+    "aliases": [],
+    "icon": "assets/icons/apps/startpage.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "buscadores"
+    ]
   },
   {
-    "id": 12,
+    "id": "searxng",
+    "legacyId": 12,
     "name": "SearXNG",
-    "url": "https://github.com/searxng/searxng",
     "cat": "Buscadores",
-    "icon": "🔎",
-    "description": "SearXNG — ferramenta de buscadores. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://github.com/searxng/searxng",
+    "platforms": [
+      "Web",
+      "Linux",
+      "Servidor"
+    ],
+    "kind": "Web/Auto-hospedado",
+    "summary": "Metabuscador de código aberto que agrega diversos provedores e pode ser instalado em servidor próprio.",
+    "features": "Múltiplos mecanismos; preferências; hospedagem independente.",
+    "cautions": "A instância operada por terceiros pode registrar buscas; auto-hospedar requer manutenção.",
+    "source": "original",
+    "emoji": "🔎",
+    "aliases": [
+      "Searnxg"
+    ],
+    "icon": "assets/icons/apps/searxng.svg",
+    "keywords": [
+      "web/auto-hospedado",
+      "buscadores"
+    ]
   },
   {
-    "id": 13,
+    "id": "monero",
+    "legacyId": 13,
     "name": "Monero",
+    "cat": "Criptomoedas",
     "url": "https://getmonero.org",
-    "cat": "Criptomoedas",
-    "icon": "◈",
-    "description": "Monero — ferramenta de criptomoedas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Protocolo/Carteiras",
+    "summary": "Criptomoeda com transações que ocultam valores e endereços na cadeia por mecanismos de privacidade do protocolo.",
+    "features": "Pagamentos privados na blockchain; nós próprios; carteiras diversas.",
+    "cautions": "Transações não são automaticamente impossíveis de rastrear por metadados de rede, corretoras ou comportamento.",
+    "source": "original",
+    "emoji": "◈",
+    "aliases": [],
+    "icon": "assets/icons/apps/monero.svg",
+    "keywords": [
+      "protocolo/carteiras",
+      "criptomoedas"
+    ]
   },
   {
-    "id": 14,
+    "id": "cake-wallet",
+    "legacyId": 14,
     "name": "Cake Wallet",
+    "cat": "Criptomoedas",
     "url": "https://cakewallet.com",
-    "cat": "Criptomoedas",
-    "icon": "◈",
-    "description": "Cake Wallet — ferramenta de criptomoedas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Carteira autocustodial de criptomoedas com suporte a Monero e gerenciamento de sementes de recuperação.",
+    "features": "Enviar/receber XMR; carteira móvel; controle das chaves.",
+    "cautions": "Perder a semente significa risco de perder fundos; serviços de swap têm condições próprias.",
+    "source": "original",
+    "emoji": "◈",
+    "aliases": [],
+    "icon": "assets/icons/apps/cake-wallet.svg",
+    "keywords": [
+      "aplicativo",
+      "criptomoedas"
+    ]
   },
   {
-    "id": 15,
+    "id": "bisq",
+    "legacyId": 15,
     "name": "Bisq",
+    "cat": "Criptomoedas",
     "url": "https://bisq.network",
-    "cat": "Criptomoedas",
-    "icon": "◈",
-    "description": "Bisq — ferramenta de criptomoedas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo desktop",
+    "summary": "Software de negociação P2P de criptomoedas, com mecanismos próprios de intermediação e acordos entre participantes.",
+    "features": "Mercado P2P; autocustódia; menor dependência de corretoras centralizadas.",
+    "cautions": "Métodos de pagamento e mercados têm disponibilidade e riscos variáveis; não implica anonimato legal garantido.",
+    "source": "original",
+    "emoji": "◈",
+    "aliases": [],
+    "icon": "assets/icons/apps/bisq.svg",
+    "keywords": [
+      "aplicativo",
+      "desktop",
+      "criptomoedas"
+    ]
   },
   {
-    "id": 16,
+    "id": "wallet-of-satoshi",
+    "legacyId": 16,
     "name": "Wallet of Satoshi",
-    "url": "https://walletofsatoshi.com",
     "cat": "Criptomoedas",
-    "icon": "◈",
-    "description": "Wallet of Satoshi — ferramenta de criptomoedas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://walletofsatoshi.com",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Carteira para pagamentos Bitcoin Lightning com foco em rapidez e pequenos valores; modelo de custódia depende do país.",
+    "features": "Pagamentos Lightning; QR codes; interface simples.",
+    "cautions": "Não é carteira de Monero e não promete anonimato; cuidado com custódia e jurisdição.",
+    "source": "original",
+    "emoji": "◈",
+    "aliases": [],
+    "icon": "assets/icons/apps/wallet-of-satoshi.svg",
+    "keywords": [
+      "aplicativo",
+      "criptomoedas"
+    ]
   },
   {
-    "id": 17,
+    "id": "yubikey",
+    "legacyId": 17,
     "name": "YubiKey",
+    "cat": "Autenticação",
     "url": "https://yubico.com",
-    "cat": "Autenticação",
-    "icon": "🔑",
-    "description": "YubiKey — ferramenta de autenticação. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Hardware",
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Hardware + suporte",
+    "summary": "Chave física de segurança para autenticação FIDO2/WebAuthn, PIV e outros protocolos conforme o modelo.",
+    "features": "MFA resistente a phishing; login com chave física; recuperação planejada.",
+    "cautions": "É essencial registrar chave reserva; compatibilidade depende de serviço e modelo.",
+    "source": "original",
+    "emoji": "🔑",
+    "aliases": [],
+    "icon": "assets/icons/apps/yubikey.svg",
+    "keywords": [
+      "hardware",
+      "+",
+      "suporte",
+      "autenticação"
+    ]
   },
   {
-    "id": 18,
+    "id": "ente-auth",
+    "legacyId": 18,
     "name": "Ente Auth",
-    "url": "https://ente.io/auth",
     "cat": "Autenticação",
-    "icon": "🔑",
-    "description": "Ente Auth — ferramenta de autenticação. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://ente.io/auth",
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Aplicativo aberto para códigos TOTP com opções de backup criptografado e sincronização entre dispositivos.",
+    "features": "Gerador de códigos; backup protegido; exportação.",
+    "cautions": "TOTP pode sofrer phishing em tempo real; prefira FIDO2 quando o serviço oferecer.",
+    "source": "original",
+    "emoji": "🔑",
+    "aliases": [
+      "Enteauth"
+    ],
+    "icon": "assets/icons/apps/ente-auth.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "autenticação"
+    ]
   },
   {
-    "id": 19,
+    "id": "bitwarden",
+    "legacyId": 19,
     "name": "Bitwarden",
+    "cat": "Senhas",
     "url": "https://bitwarden.com",
-    "cat": "Senhas",
-    "icon": "🔐",
-    "description": "Bitwarden — ferramenta de senhas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS",
+      "Web"
+    ],
+    "kind": "Aplicativo e extensão",
+    "summary": "Gerenciador de senhas com cofre criptografado, gerador de senhas e sincronização entre dispositivos.",
+    "features": "Preenchimento; compartilhamento; chaves e organização.",
+    "cautions": "Proteja a senha mestra e segundo fator; recursos e limites variam por plano.",
+    "source": "original",
+    "emoji": "🔐",
+    "aliases": [],
+    "icon": "assets/icons/apps/bitwarden.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "extensão",
+      "senhas"
+    ]
   },
   {
-    "id": 20,
+    "id": "keepassxc",
+    "legacyId": 20,
     "name": "KeePassXC",
-    "url": "https://keepassxc.org",
     "cat": "Senhas",
-    "icon": "🔐",
-    "description": "KeePassXC — ferramenta de senhas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://keepassxc.org",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo desktop",
+    "summary": "Gerenciador de senhas que guarda um banco de dados criptografado em arquivo sob controle do usuário.",
+    "features": "Cofre offline; chaves de arquivo; integração com navegador.",
+    "cautions": "Sincronização e backup são responsabilidade do usuário; não há app KeePassXC nativo Android.",
+    "source": "original",
+    "emoji": "🔐",
+    "aliases": [],
+    "icon": "assets/icons/apps/keepassxc.svg",
+    "keywords": [
+      "aplicativo",
+      "desktop",
+      "senhas"
+    ]
   },
   {
-    "id": 21,
+    "id": "veracrypt",
+    "legacyId": 21,
     "name": "VeraCrypt",
+    "cat": "Criptografia",
     "url": "https://veracrypt.fr",
-    "cat": "Criptografia",
-    "icon": "🗝️",
-    "description": "VeraCrypt — ferramenta de criptografia. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo desktop",
+    "summary": "Criação de volumes criptografados e proteção de partições ou discos conforme recursos de cada sistema.",
+    "features": "Volumes; contêineres; criptografia de armazenamento.",
+    "cautions": "Volumes ocultos exigem planejamento; não substitui backup nem proteção com sistema desbloqueado.",
+    "source": "original",
+    "emoji": "🗝️",
+    "aliases": [],
+    "icon": "assets/icons/apps/veracrypt.svg",
+    "keywords": [
+      "aplicativo",
+      "desktop",
+      "criptografia"
+    ]
   },
   {
-    "id": 22,
+    "id": "cryptomator",
+    "legacyId": 22,
     "name": "Cryptomator",
+    "cat": "Criptografia",
     "url": "https://cryptomator.org",
-    "cat": "Criptografia",
-    "icon": "🗝️",
-    "description": "Cryptomator — ferramenta de criptografia. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Criptografa arquivos individualmente em cofres antes de sincronizá-los com serviços de nuvem.",
+    "features": "Cofres; criptografia do lado do cliente; uso com pastas sincronizadas.",
+    "cautions": "Não criptografa metadados que o serviço ainda possa observar, como padrão de acesso e volume.",
+    "source": "original",
+    "emoji": "🗝️",
+    "aliases": [],
+    "icon": "assets/icons/apps/cryptomator.svg",
+    "keywords": [
+      "aplicativo",
+      "criptografia"
+    ]
   },
   {
-    "id": 23,
+    "id": "picocrypt-ng",
+    "legacyId": 23,
     "name": "Picocrypt-NG",
-    "url": "https://github.com/Picocrypt-NG/Picocrypt-NG",
     "cat": "Criptografia",
-    "icon": "🗝️",
-    "description": "Picocrypt-NG — ferramenta de criptografia. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://github.com/Picocrypt-NG/Picocrypt-NG",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Utilitário leve de criptografia de arquivos destinado ao envio ou armazenamento de dados protegidos.",
+    "features": "Criptografia de arquivo; portabilidade; interface simples.",
+    "cautions": "Verifique se o fork e a versão escolhidos continuam mantidos e auditados.",
+    "source": "original",
+    "emoji": "🗝️",
+    "aliases": [],
+    "icon": "assets/icons/apps/picocrypt-ng.svg",
+    "keywords": [
+      "aplicativo",
+      "criptografia"
+    ]
   },
   {
-    "id": 24,
+    "id": "signal",
+    "legacyId": 24,
     "name": "Signal",
+    "cat": "Mensagens",
     "url": "https://signal.org",
-    "cat": "Mensagens",
-    "icon": "💬",
-    "description": "Signal — ferramenta de mensagens. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Mensageiro de mensagens e chamadas com criptografia ponta a ponta por padrão e funcionalidades de segurança.",
+    "features": "Chats e chamadas; mensagens temporárias; verificação de identidade.",
+    "cautions": "Cadastro costuma exigir número de telefone; metadados e backups têm limites específicos.",
+    "source": "original",
+    "emoji": "💬",
+    "aliases": [],
+    "icon": "assets/icons/apps/signal.svg",
+    "keywords": [
+      "aplicativo",
+      "mensagens"
+    ]
   },
   {
-    "id": 25,
+    "id": "threema",
+    "legacyId": 25,
     "name": "Threema",
+    "cat": "Mensagens",
     "url": "https://threema.com",
-    "cat": "Mensagens",
-    "icon": "💬",
-    "description": "Threema — ferramenta de mensagens. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Mensageiro privado com identificador próprio que pode dispensar número de telefone no cadastro.",
+    "features": "Mensagens e chamadas E2EE; identificador sem número; grupos.",
+    "cautions": "O custo, a interoperabilidade e os clientes variam conforme a plataforma.",
+    "source": "original",
+    "emoji": "💬",
+    "aliases": [],
+    "icon": "assets/icons/apps/threema.svg",
+    "keywords": [
+      "aplicativo",
+      "mensagens"
+    ]
   },
   {
-    "id": 26,
+    "id": "session",
+    "legacyId": 26,
     "name": "Session",
+    "cat": "Mensagens",
     "url": "https://getsession.org",
-    "cat": "Mensagens",
-    "icon": "💬",
-    "description": "Session — ferramenta de mensagens. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Mensageiro voltado à redução de metadados e ao uso sem número de telefone, com arquitetura própria de roteamento.",
+    "features": "ID próprio; mensagens criptografadas; roteamento de rede.",
+    "cautions": "Analise modelos de ameaça, maturidade dos clientes e limitações frente a Signal.",
+    "source": "original",
+    "emoji": "💬",
+    "aliases": [],
+    "icon": "assets/icons/apps/session.svg",
+    "keywords": [
+      "aplicativo",
+      "mensagens"
+    ]
   },
   {
-    "id": 27,
+    "id": "bitchat",
+    "legacyId": 27,
     "name": "Bitchat",
-    "url": "https://github.com/permissionlesstech/bitchat",
     "cat": "Mensagens",
-    "icon": "💬",
-    "description": "Bitchat — ferramenta de mensagens. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://github.com/permissionlesstech/bitchat",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Projeto de mensagens ponto a ponto que utiliza Bluetooth e redes mesh quando não há infraestrutura de internet.",
+    "features": "Conexões próximas; comunicação local; experimentação sem rede móvel.",
+    "cautions": "Alcance, entrega e segurança dependem do ambiente, da versão e do número de dispositivos.",
+    "source": "original",
+    "emoji": "💬",
+    "aliases": [],
+    "icon": "assets/icons/apps/bitchat.svg",
+    "keywords": [
+      "aplicativo",
+      "mensagens"
+    ]
   },
   {
-    "id": 28,
+    "id": "openstreetmap",
+    "legacyId": 28,
     "name": "OpenStreetMap",
+    "cat": "Mapas",
     "url": "https://openstreetmap.org",
-    "cat": "Mapas",
-    "icon": "🗺️",
-    "description": "OpenStreetMap — ferramenta de mapas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Projeto/Serviço web",
+    "summary": "Base colaborativa de dados geográficos aberta, usada por aplicativos e serviços de mapas.",
+    "features": "Dados livres; edição comunitária; mapas globais.",
+    "cautions": "A privacidade depende do aplicativo e servidor que consomem os dados.",
+    "source": "original",
+    "emoji": "🗺️",
+    "aliases": [
+      "OSM"
+    ],
+    "icon": "assets/icons/apps/openstreetmap.svg",
+    "keywords": [
+      "projeto/serviço",
+      "web",
+      "mapas"
+    ]
   },
   {
-    "id": 29,
+    "id": "osmand",
+    "legacyId": 29,
     "name": "OsmAnd",
-    "url": "https://osmand.net",
     "cat": "Mapas",
-    "icon": "🗺️",
-    "description": "OsmAnd — ferramenta de mapas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://osmand.net",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Navegação com mapas OSM armazenados no dispositivo, incluindo trilhas e rotas offline.",
+    "features": "Mapas offline; rotas; camadas e GPX.",
+    "cautions": "Mapas ocupam armazenamento; recursos podem variar por versão ou assinatura.",
+    "source": "original",
+    "emoji": "🗺️",
+    "aliases": [],
+    "icon": "assets/icons/apps/osmand.svg",
+    "keywords": [
+      "aplicativo",
+      "mapas"
+    ]
   },
   {
-    "id": 30,
+    "id": "tails",
+    "legacyId": 30,
     "name": "Tails",
-    "url": "https://tails.net",
     "cat": "Sistemas",
-    "icon": "💻",
-    "description": "Tails — ferramenta de sistemas. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://tails.net",
+    "platforms": [
+      "Live USB"
+    ],
+    "kind": "Sistema operacional live",
+    "summary": "Distribuição inicializável via USB que encaminha tráfego suportado pela rede Tor e reduz vestígios locais.",
+    "features": "Sessão amnésica; ferramentas pré-instaladas; armazenamento persistente opcional.",
+    "cautions": "Normalmente precisa de internet para atividades pela rede Tor; não garante anonimato se usado incorretamente.",
+    "source": "original",
+    "emoji": "💻",
+    "aliases": [],
+    "icon": "assets/icons/apps/tails.svg",
+    "keywords": [
+      "sistema",
+      "operacional",
+      "live",
+      "sistemas"
+    ]
   },
   {
-    "id": 31,
+    "id": "ishredder",
+    "legacyId": 31,
     "name": "iShredder",
+    "cat": "Limpeza",
     "url": "https://protectstar.com/pt/products/ishredder",
-    "cat": "Limpeza",
-    "icon": "🧹",
-    "description": "iShredder — ferramenta de limpeza. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Ferramenta de limpeza de arquivos no Android que anuncia técnicas de exclusão e sobrescrita.",
+    "features": "Limpeza de arquivos; opções de segurança e armazenamento.",
+    "cautions": "Em flash/SSD, wear leveling e criptografia tornam impossível garantir sobrescrita física de cada bloco.",
+    "source": "original",
+    "emoji": "🧹",
+    "aliases": [],
+    "icon": "assets/icons/apps/ishredder.svg",
+    "keywords": [
+      "aplicativo",
+      "limpeza"
+    ]
   },
   {
-    "id": 32,
+    "id": "dban",
+    "legacyId": 32,
     "name": "DBAN",
+    "cat": "Limpeza",
     "url": "https://dban.org",
-    "cat": "Limpeza",
-    "icon": "🧹",
-    "description": "DBAN — ferramenta de limpeza. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Live USB"
+    ],
+    "kind": "Utilitário bootável",
+    "summary": "Ferramenta clássica para apagar discos magnéticos iniciando fora do sistema operacional.",
+    "features": "Sobrescrita de HDDs; execução independente do SO.",
+    "cautions": "Não adequada para SSD/NVMe modernos, sobretudo para apagamento seguro verificável.",
+    "source": "original",
+    "emoji": "🧹",
+    "aliases": [],
+    "icon": "assets/icons/apps/dban.svg",
+    "keywords": [
+      "utilitário",
+      "bootável",
+      "limpeza"
+    ]
   },
   {
-    "id": 33,
+    "id": "bleachbit",
+    "legacyId": 33,
     "name": "BleachBit",
-    "url": "https://bleachbit.org",
     "cat": "Limpeza",
-    "icon": "🧹",
-    "description": "BleachBit — ferramenta de limpeza. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://bleachbit.org",
+    "platforms": [
+      "Linux",
+      "Windows"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Limpador de arquivos temporários, caches e rastros selecionados pelo usuário.",
+    "features": "Liberar espaço; limpeza de cache; regras de exclusão.",
+    "cautions": "Pode apagar dados úteis; não garante eliminação física irrecuperável em SSD.",
+    "source": "original",
+    "emoji": "🧹",
+    "aliases": [],
+    "icon": "assets/icons/apps/bleachbit.svg",
+    "keywords": [
+      "aplicativo",
+      "limpeza"
+    ]
   },
   {
-    "id": 34,
+    "id": "simsup",
+    "legacyId": 34,
     "name": "SimSup",
+    "cat": "SIM e números",
     "url": "https://kycnot.me/service/simsup",
-    "cat": "SIM e números",
-    "icon": "📱",
-    "description": "SimSup — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Serviço de SIM ou número listado em diretórios focados em registro e pagamento com menor coleta de dados.",
+    "features": "Consulta de planos e modalidades de SIM.",
+    "cautions": "Políticas de KYC, cobertura e preços exigem confirmação atual no provedor.",
+    "source": "original",
+    "emoji": "📱",
+    "aliases": [],
+    "icon": "assets/icons/apps/simsup.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "sim",
+      "e",
+      "números"
+    ]
   },
   {
-    "id": 35,
+    "id": "nadanada",
+    "legacyId": 35,
     "name": "NadaNada",
+    "cat": "SIM e números",
     "url": "https://kycnot.me/service/nadanada",
-    "cat": "SIM e números",
-    "icon": "📱",
-    "description": "NadaNada — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Provedor de conectividade ou números associado a ofertas de privacidade em diretórios especializados.",
+    "features": "Planos e contratação por site.",
+    "cautions": "Verifique KYC, disponibilidade, duração e suporte antes de contratar.",
+    "source": "original",
+    "emoji": "📱",
+    "aliases": [],
+    "icon": "assets/icons/apps/nadanada.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "sim",
+      "e",
+      "números"
+    ]
   },
   {
-    "id": 36,
+    "id": "crypton",
+    "legacyId": 36,
     "name": "Crypton",
+    "cat": "SIM e números",
     "url": "https://kycnot.me/service/crypton",
-    "cat": "SIM e números",
-    "icon": "📱",
-    "description": "Crypton — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Serviço listado para obtenção de números ou conectividade com opções variáveis.",
+    "features": "Números para serviços compatíveis.",
+    "cautions": "Números temporários são frágeis para recuperação de contas; verifique regras de cadastro.",
+    "source": "original",
+    "emoji": "📱",
+    "aliases": [],
+    "icon": "assets/icons/apps/crypton.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "sim",
+      "e",
+      "números"
+    ]
   },
   {
-    "id": 37,
+    "id": "silent-link",
+    "legacyId": 37,
     "name": "Silent Link",
+    "cat": "SIM e números",
     "url": "https://silent.link",
-    "cat": "SIM e números",
-    "icon": "📱",
-    "description": "Silent Link — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Provedor de eSIM e planos de dados que anuncia processos de aquisição favoráveis à privacidade.",
+    "features": "eSIM; pacotes móveis; recargas.",
+    "cautions": "Cobertura, identificação exigida e compatibilidade com aparelho dependem do plano e país.",
+    "source": "original",
+    "emoji": "📱",
+    "aliases": [],
+    "icon": "assets/icons/apps/silent-link.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "sim",
+      "e",
+      "números"
+    ]
   },
   {
-    "id": 38,
+    "id": "stealths",
+    "legacyId": 38,
     "name": "Stealths",
+    "cat": "SIM e números",
     "url": "https://kycnot.me/service/stealths",
-    "cat": "SIM e números",
-    "icon": "📱",
-    "description": "Stealths — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Serviço de números virtuais temporários para recebimento de códigos em serviços compatíveis.",
+    "features": "SMS temporário; número descartável.",
+    "cautions": "Números compartilhados/temporários podem ser bloqueados por serviços ou expor mensagens.",
+    "source": "original",
+    "emoji": "📱",
+    "aliases": [],
+    "icon": "assets/icons/apps/stealths.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "sim",
+      "e",
+      "números"
+    ]
   },
   {
-    "id": 39,
+    "id": "hero-sms",
+    "legacyId": 39,
     "name": "Hero SMS",
+    "cat": "SIM e números",
     "url": "https://hero-sms.com/pt",
-    "cat": "SIM e números",
-    "icon": "📱",
-    "description": "Hero SMS — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Plataforma de aluguel de números para verificação por SMS em serviços selecionados.",
+    "features": "Recepção de SMS; seleção de serviços.",
+    "cautions": "Evite depender de números descartáveis para recuperação de contas importantes.",
+    "source": "original",
+    "emoji": "📱",
+    "aliases": [],
+    "icon": "assets/icons/apps/hero-sms.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "sim",
+      "e",
+      "números"
+    ]
   },
   {
-    "id": 40,
+    "id": "onesimcard",
+    "legacyId": 40,
     "name": "OneSimCard",
+    "cat": "SIM e números",
     "url": "https://onesimcard.com",
-    "cat": "SIM e números",
-    "icon": "📱",
-    "description": "OneSimCard — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Operadora de SIM e eSIM internacionais direcionados a viagens e conectividade em diferentes países.",
+    "features": "Roaming; planos internacionais; dados móveis.",
+    "cautions": "Não é uma solução de anonimato por si só e pode exigir identificação.",
+    "source": "original",
+    "emoji": "📱",
+    "aliases": [],
+    "icon": "assets/icons/apps/onesimcard.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "sim",
+      "e",
+      "números"
+    ]
   },
   {
-    "id": 41,
+    "id": "telera",
+    "legacyId": 41,
     "name": "Telera",
-    "url": "https://app2.telera.com.br",
     "cat": "SIM e números",
-    "icon": "📱",
-    "description": "Telera — ferramenta de sim e números. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://app2.telera.com.br",
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Serviço brasileiro de números virtuais e comunicação contratada.",
+    "features": "Número virtual; operações nacionais.",
+    "cautions": "Consulte documentação e procedimentos de KYC; número virtual pode não funcionar em todos os cadastros.",
+    "source": "original",
+    "emoji": "📱",
+    "aliases": [],
+    "icon": "assets/icons/apps/telera.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "sim",
+      "e",
+      "números"
+    ]
   },
   {
-    "id": 42,
+    "id": "have-i-been-pwned",
+    "legacyId": 42,
     "name": "Have I Been Pwned",
+    "cat": "OSINT e exposição",
     "url": "https://haveibeenpwned.com",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Have I Been Pwned — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Consulta se e-mails aparecem em conjuntos conhecidos de vazamentos de dados.",
+    "features": "Verificação de exposição; notificações; consulta de domínios.",
+    "cautions": "Ausência de resultados não prova que a conta nunca foi comprometida.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/have-i-been-pwned.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 43,
+    "id": "behind-the-email",
+    "legacyId": 43,
     "name": "Behind the Email",
+    "cat": "OSINT e exposição",
     "url": "https://behindtheemail.com",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Behind the Email — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Consulta e correlação de informações públicas associadas a endereços de e-mail.",
+    "features": "Pesquisa de identidade pública; pistas OSINT.",
+    "cautions": "Resultados podem conter falsos positivos; respeite privacidade e consentimento.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/behind-the-email.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 44,
+    "id": "justdeleteme",
+    "legacyId": 44,
     "name": "JustDeleteMe",
+    "cat": "OSINT e exposição",
     "url": "https://justdeleteme.xyz/en",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "JustDeleteMe — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Diretório que aponta para páginas oficiais de cancelamento ou exclusão de contas em plataformas diversas.",
+    "features": "Atalhos para exclusão; classificação de dificuldade.",
+    "cautions": "Excluir uma conta não garante eliminação imediata de cópias e backups.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/justdeleteme.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 45,
+    "id": "who-is",
+    "legacyId": 45,
     "name": "Who.is",
+    "cat": "OSINT e exposição",
     "url": "https://who.is",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Who.is — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Consulta registros WHOIS e informações públicas de domínio disponíveis no registro.",
+    "features": "Titularidade pública; servidores DNS; histórico quando disponível.",
+    "cautions": "Dados podem estar ocultos por privacidade e nem sempre estão atualizados.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/who-is.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 46,
+    "id": "registro-br-whois",
+    "legacyId": 46,
     "name": "Registro.br WHOIS",
+    "cat": "OSINT e exposição",
     "url": "https://registro.br/tecnologia/ferramentas/whois",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Registro.br WHOIS — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Busca dados públicos e detalhes técnicos de domínios sob gestão do Registro.br.",
+    "features": "Domínios .br; DNS e contato público.",
+    "cautions": "A LGPD e privacidade podem restringir campos; não use informações para assédio.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/registro-br-whois.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 47,
+    "id": "shodan",
+    "legacyId": 47,
     "name": "Shodan",
+    "cat": "OSINT e exposição",
     "url": "https://shodan.io",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Shodan — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Mecanismo de busca por serviços e dispositivos visíveis na internet, baseado em varreduras e banners.",
+    "features": "Pesquisa de exposição; portas; serviços conhecidos.",
+    "cautions": "Encontrar um dispositivo não autoriza acesso ou exploração; resultados podem estar defasados.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/shodan.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 48,
+    "id": "pimeyes",
+    "legacyId": 48,
     "name": "PimEyes",
+    "cat": "OSINT e exposição",
     "url": "https://pimeyes.com/en",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "PimEyes — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Serviço de busca reversa de rostos em imagens públicas na web.",
+    "features": "Detecção de exposição de imagem; busca por similaridade.",
+    "cautions": "Envolve dados biométricos sensíveis, pode errar correspondências e possui restrições de uso.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/pimeyes.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 49,
+    "id": "epieos",
+    "legacyId": 49,
     "name": "Epieos",
+    "cat": "OSINT e exposição",
     "url": "https://epieos.com",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Epieos — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Ferramenta para pesquisa de dados publicamente correlacionáveis a e-mails e perfis.",
+    "features": "Verificações OSINT; correlações públicas.",
+    "cautions": "Não representa prova de identidade; use apenas em contexto legítimo e consentido.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/epieos.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 50,
+    "id": "sherlock",
+    "legacyId": 50,
     "name": "Sherlock",
+    "cat": "OSINT e exposição",
     "url": "https://github.com/sherlock-project/sherlock",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Sherlock — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Software de linha de comando que procura um nome de usuário em muitas plataformas públicas.",
+    "features": "Enumerar nomes; gerar relatórios; automação.",
+    "cautions": "Nomes coincidentes não identificam uma pessoa; plataformas mudam respostas.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/sherlock.svg",
+    "keywords": [
+      "cli",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 51,
+    "id": "maigret",
+    "legacyId": 51,
     "name": "Maigret",
+    "cat": "OSINT e exposição",
     "url": "https://github.com/soxoj/maigret",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Maigret — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Ferramenta OSINT de busca e análise de nomes de usuário com cobertura de diversos sites.",
+    "features": "Pesquisa de usernames; relatórios; verificação cruzada.",
+    "cautions": "Pode produzir falsos positivos e deve ser usada com finalidade legítima.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/maigret.svg",
+    "keywords": [
+      "cli",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 52,
+    "id": "osint-arsenal",
+    "legacyId": 52,
     "name": "OSINT Arsenal",
+    "cat": "OSINT e exposição",
     "url": "https://github.com/rawfilejson/awesome-osint-arsenal",
-    "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "OSINT Arsenal — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Diretório web",
+    "summary": "Repositório-curadoria de ferramentas de inteligência de fontes abertas, organizado por usos.",
+    "features": "Descoberta de recursos; referências e categorias.",
+    "cautions": "Listagens externas podem incluir projetos antigos; audite fontes antes de instalar.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/osint-arsenal.svg",
+    "keywords": [
+      "diretório",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 53,
+    "id": "google-hacking-database",
+    "legacyId": 53,
     "name": "Google Hacking Database",
-    "url": "https://exploit-db.com/google-hacking-database",
     "cat": "OSINT e exposição",
-    "icon": "🕵️",
-    "description": "Google Hacking Database — ferramenta de osint e exposição. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://exploit-db.com/google-hacking-database",
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Diretório web",
+    "summary": "Base pública de exemplos de operadores avançados de busca e consultas para reconhecimento defensivo.",
+    "features": "Dorks; auditoria de exposição; aprendizado.",
+    "cautions": "Resultados de pesquisa não dão permissão para acessar documentos privados.",
+    "source": "original",
+    "emoji": "🕵️",
+    "aliases": [],
+    "icon": "assets/icons/apps/google-hacking-database.svg",
+    "keywords": [
+      "diretório",
+      "web",
+      "osint",
+      "e",
+      "exposição"
+    ]
   },
   {
-    "id": 54,
+    "id": "exiftool",
+    "legacyId": 54,
     "name": "ExifTool",
+    "cat": "Metadados",
     "url": "https://exiftool.org",
-    "cat": "Metadados",
-    "icon": "📑",
-    "description": "ExifTool — ferramenta de metadados. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Ferramenta de leitura, escrita e remoção de metadados em fotos, vídeos e muitos formatos de arquivo.",
+    "features": "EXIF; geolocalização; datas; edição em lote.",
+    "cautions": "Alterar metadados modifica evidências; preserve originais em investigações forenses.",
+    "source": "original",
+    "emoji": "📑",
+    "aliases": [],
+    "icon": "assets/icons/apps/exiftool.svg",
+    "keywords": [
+      "cli",
+      "metadados"
+    ]
   },
   {
-    "id": 55,
+    "id": "mat2",
+    "legacyId": 55,
     "name": "MAT2",
+    "cat": "Metadados",
     "url": "https://0xacab.org/jvoisin/mat2",
-    "cat": "Metadados",
-    "icon": "📑",
-    "description": "MAT2 — ferramenta de metadados. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux"
+    ],
+    "kind": "CLI/Aplicativo",
+    "summary": "Ferramenta de análise e remoção de metadados de documentos e imagens em formatos suportados.",
+    "features": "Sanitização de arquivos; inspeção de formatos.",
+    "cautions": "Não elimina todos os vestígios; alguns formatos perdem funções ao serem processados.",
+    "source": "original",
+    "emoji": "📑",
+    "aliases": [],
+    "icon": "assets/icons/apps/mat2.svg",
+    "keywords": [
+      "cli/aplicativo",
+      "metadados"
+    ]
   },
   {
-    "id": 56,
+    "id": "ffmpeg",
+    "legacyId": 56,
     "name": "FFmpeg",
-    "url": "https://ffmpeg.org",
     "cat": "Metadados",
-    "icon": "📑",
-    "description": "FFmpeg — ferramenta de metadados. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://ffmpeg.org",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Conjunto de ferramentas para analisar, converter, codificar e tratar fluxos de áudio e vídeo.",
+    "features": "Transcodificação; inspeção de streams; metadados e filtros.",
+    "cautions": "Não é auditor de privacidade completo; reencodar pode reduzir qualidade e alterar evidência.",
+    "source": "original",
+    "emoji": "📑",
+    "aliases": [],
+    "icon": "assets/icons/apps/ffmpeg.svg",
+    "keywords": [
+      "cli",
+      "metadados"
+    ]
   },
   {
-    "id": 57,
+    "id": "dangerzone",
+    "legacyId": 57,
     "name": "Dangerzone",
+    "cat": "Ameaças",
     "url": "https://dangerzone.rocks",
-    "cat": "Ameaças",
-    "icon": "🦠",
-    "description": "Dangerzone — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Converte documentos potencialmente perigosos em versões visuais sanitizadas, reduzindo risco de código ativo.",
+    "features": "Isolamento; conversão de PDFs e documentos; cópia segura.",
+    "cautions": "A conversão pode perder links, formulários e elementos editáveis; não garante ausência total de risco.",
+    "source": "original",
+    "emoji": "🦠",
+    "aliases": [],
+    "icon": "assets/icons/apps/dangerzone.svg",
+    "keywords": [
+      "aplicativo",
+      "ameaças"
+    ]
   },
   {
-    "id": 58,
+    "id": "clamav",
+    "legacyId": 58,
     "name": "ClamAV",
+    "cat": "Ameaças",
     "url": "https://clamav.net",
-    "cat": "Ameaças",
-    "icon": "🦠",
-    "description": "ClamAV — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Antivírus/CLI",
+    "summary": "Motor aberto de detecção de malware com assinaturas e ferramentas para varredura de arquivos.",
+    "features": "Escaneamento; assinatura; integração com servidor de e-mail.",
+    "cautions": "Detecção por assinatura não substitui isolamento nem atualizações do sistema.",
+    "source": "original",
+    "emoji": "🦠",
+    "aliases": [],
+    "icon": "assets/icons/apps/clamav.svg",
+    "keywords": [
+      "antivírus/cli",
+      "ameaças"
+    ]
   },
   {
-    "id": 59,
+    "id": "clamtk",
+    "legacyId": 59,
     "name": "ClamTk",
+    "cat": "Ameaças",
     "url": "https://github.com/dave-theunsub/clamtk",
-    "cat": "Ameaças",
-    "icon": "🦠",
-    "description": "ClamTk — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Interface gráfica para realizar varreduras ClamAV em arquivos e pastas no Linux.",
+    "features": "Exame sob demanda; quarentena conforme versão; facilidade de uso.",
+    "cautions": "Não amplia por si só a eficácia do motor ClamAV; disponibilidade varia por distribuição.",
+    "source": "original",
+    "emoji": "🦠",
+    "aliases": [],
+    "icon": "assets/icons/apps/clamtk.svg",
+    "keywords": [
+      "aplicativo",
+      "ameaças"
+    ]
   },
   {
-    "id": 60,
+    "id": "hybrid-analysis",
+    "legacyId": 60,
     "name": "Hybrid Analysis",
+    "cat": "Ameaças",
     "url": "https://hybrid-analysis.com",
-    "cat": "Ameaças",
-    "icon": "🦠",
-    "description": "Hybrid Analysis — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Serviço de sandbox e análise estática/dinâmica de arquivos suspeitos e indicadores.",
+    "features": "Relatórios comportamentais; reputação; extração de sinais.",
+    "cautions": "Nunca envie documentos confidenciais a um serviço público de análise.",
+    "source": "original",
+    "emoji": "🦠",
+    "aliases": [],
+    "icon": "assets/icons/apps/hybrid-analysis.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "ameaças"
+    ]
   },
   {
-    "id": 61,
+    "id": "any-run",
+    "legacyId": 61,
     "name": "ANY.RUN",
+    "cat": "Ameaças",
     "url": "https://app.any.run",
-    "cat": "Ameaças",
-    "icon": "🦠",
-    "description": "ANY.RUN — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Ambiente interativo de execução isolada para observar comportamento de software ou URLs suspeitos.",
+    "features": "Sandbox; análise de processos; conexões de rede.",
+    "cautions": "Amostras e relatórios podem se tornar acessíveis a terceiros, conforme o plano.",
+    "source": "original",
+    "emoji": "🦠",
+    "aliases": [],
+    "icon": "assets/icons/apps/any-run.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "ameaças"
+    ]
   },
   {
-    "id": 62,
+    "id": "virustotal",
+    "legacyId": 62,
     "name": "VirusTotal",
+    "cat": "Ameaças",
     "url": "https://virustotal.com",
-    "cat": "Ameaças",
-    "icon": "🦠",
-    "description": "VirusTotal — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Agregador de mecanismos antivírus e dados de reputação para URLs, hashes e arquivos.",
+    "features": "Múltiplos motores; reputação; relações entre indicadores.",
+    "cautions": "Envios de arquivos podem ser compartilhados; prefira consulta de hash para materiais sensíveis.",
+    "source": "original",
+    "emoji": "🦠",
+    "aliases": [],
+    "icon": "assets/icons/apps/virustotal.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "ameaças"
+    ]
   },
   {
-    "id": 63,
+    "id": "metadefender",
+    "legacyId": 63,
     "name": "MetaDefender",
-    "url": "https://metadefender.com",
     "cat": "Ameaças",
-    "icon": "🦠",
-    "description": "MetaDefender — ferramenta de ameaças. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://metadefender.com",
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Serviço web",
+    "summary": "Análise multimecanismo e reputação de arquivos e links, com opções corporativas.",
+    "features": "Varredura de arquivos; reputação; integração por API.",
+    "cautions": "Políticas de retenção e compartilhamento dependem do serviço e plano.",
+    "source": "original",
+    "emoji": "🦠",
+    "aliases": [],
+    "icon": "assets/icons/apps/metadefender.svg",
+    "keywords": [
+      "serviço",
+      "web",
+      "ameaças"
+    ]
   },
   {
-    "id": 64,
+    "id": "autopsy",
+    "legacyId": 64,
     "name": "Autopsy",
+    "cat": "Forense digital",
     "url": "https://autopsy.com",
-    "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "Autopsy — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo desktop",
+    "summary": "Plataforma de análise forense de imagens de discos, sistemas de arquivos e artefatos de usuários.",
+    "features": "Indexação; timeline; recuperação de arquivos; relatórios.",
+    "cautions": "Use cópias forenses e cadeia de custódia; alguns módulos dependem do sistema.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/autopsy.svg",
+    "keywords": [
+      "aplicativo",
+      "desktop",
+      "forense",
+      "digital"
+    ]
   },
   {
-    "id": 65,
+    "id": "the-sleuth-kit",
+    "legacyId": 65,
     "name": "The Sleuth Kit",
+    "cat": "Forense digital",
     "url": "https://sleuthkit.org",
-    "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "The Sleuth Kit — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Bibliotecas e ferramentas forenses de baixo nível para examinar sistemas de arquivos e imagens de disco.",
+    "features": "Estruturas de disco; alocação; recuperação e timeline.",
+    "cautions": "Uso exige conhecimento técnico; preserve hashes e originais.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/the-sleuth-kit.svg",
+    "keywords": [
+      "cli",
+      "forense",
+      "digital"
+    ]
   },
   {
-    "id": 66,
+    "id": "bulk-extractor",
+    "legacyId": 66,
     "name": "bulk_extractor",
+    "cat": "Forense digital",
     "url": "https://github.com/simsong/bulk_extractor",
-    "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "bulk_extractor — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Ferramenta para extrair e-mails, URLs, domínios e outros padrões de imagens forenses sem depender de sistema de arquivos.",
+    "features": "Extração massiva; análise de artefatos; relatórios.",
+    "cautions": "Pode localizar informações pessoais; requer ambiente e autorização adequados.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/bulk-extractor.svg",
+    "keywords": [
+      "cli",
+      "forense",
+      "digital"
+    ]
   },
   {
-    "id": 67,
+    "id": "dc3dd",
+    "legacyId": 67,
     "name": "dc3dd",
+    "cat": "Forense digital",
     "url": "https://kali.org/tools/dc3dd",
-    "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "dc3dd — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux"
+    ],
+    "kind": "CLI",
+    "summary": "Versão adaptada do dd usada em aquisição forense de disco, com recursos de hashes e registros.",
+    "features": "Imagem bit a bit; logs; hashes de verificação.",
+    "cautions": "Confundir disco de origem e destino pode sobrescrever provas de forma irreversível.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/dc3dd.svg",
+    "keywords": [
+      "cli",
+      "forense",
+      "digital"
+    ]
   },
   {
-    "id": 68,
+    "id": "ftk-imager",
+    "legacyId": 68,
     "name": "FTK Imager",
+    "cat": "Forense digital",
     "url": "https://exterro.com/digital-forensics-software/ftk-imager",
-    "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "FTK Imager — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Windows"
+    ],
+    "kind": "Aplicativo gráfico desktop",
+    "summary": "Software de aquisição e inspeção de imagens forenses com suporte a pré-visualização e cálculo de hashes.",
+    "features": "Captura forense; verificação de integridade; visualização de evidências.",
+    "cautions": "A interface gráfica principal é para Windows; existem ferramentas de aquisição por linha de comando em outros ambientes. Preserve cadeia de custódia.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/ftk-imager.svg",
+    "keywords": [
+      "aplicativo",
+      "gráfico",
+      "desktop",
+      "forense",
+      "digital"
+    ]
   },
   {
-    "id": 69,
+    "id": "hashcat",
+    "legacyId": 69,
     "name": "Hashcat",
+    "cat": "Forense digital",
     "url": "https://hashcat.net/hashcat",
-    "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "Hashcat — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Ferramenta de auditoria e recuperação autorizada de senhas baseada em hashes, com aceleração por GPU.",
+    "features": "Testar robustez; formatos variados; auditoria controlada.",
+    "cautions": "Só use com autorização; senhas fortes e hardware limitado podem tornar a recuperação inviável.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/hashcat.svg",
+    "keywords": [
+      "cli",
+      "forense",
+      "digital"
+    ]
   },
   {
-    "id": 70,
+    "id": "john-the-ripper",
+    "legacyId": 70,
     "name": "John the Ripper",
+    "cat": "Forense digital",
     "url": "https://openwall.com/john",
-    "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "John the Ripper — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Ferramenta de auditoria e recuperação de senhas com diversas regras, formatos e modos de ataque.",
+    "features": "Auditoria de hashes; formatos extensíveis; recuperação legítima.",
+    "cautions": "Não contorna criptografia robusta sem a senha ou ataque efetivo; requer autorização.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/john-the-ripper.svg",
+    "keywords": [
+      "cli",
+      "forense",
+      "digital"
+    ]
   },
   {
-    "id": 71,
+    "id": "linux-leo",
+    "legacyId": 71,
     "name": "Linux Leo",
-    "url": "https://linuxleo.com",
     "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "Linux Leo — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://linuxleo.com",
+    "platforms": [
+      "Web"
+    ],
+    "kind": "Guia web",
+    "summary": "Material educativo com fundamentos e procedimentos de perícia digital em ambientes Linux.",
+    "features": "Tutoriais; conceitos; estudo independente.",
+    "cautions": "Documentação educativa não substitui procedimentos forenses validados.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/linux-leo.svg",
+    "keywords": [
+      "guia",
+      "web",
+      "forense",
+      "digital"
+    ]
   },
   {
-    "id": 72,
+    "id": "volatility",
+    "legacyId": 72,
     "name": "Volatility",
-    "url": "https://github.com/volatilityfoundation/volatility",
     "cat": "Forense digital",
-    "icon": "🧬",
-    "description": "Volatility — ferramenta de forense digital. Consulte a documentação oficial e avalie as limitações de segurança e privacidade."
+    "url": "https://github.com/volatilityfoundation/volatility",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Framework de análise de memória RAM para identificar processos, módulos, conexões e artefatos em dumps.",
+    "features": "Investigação de memória; plugins; resposta a incidentes.",
+    "cautions": "Exige perfil e versão compatíveis da captura; analise cópias preservadas.",
+    "source": "original",
+    "emoji": "🧬",
+    "aliases": [],
+    "icon": "assets/icons/apps/volatility.svg",
+    "keywords": [
+      "cli",
+      "forense",
+      "digital"
+    ]
+  },
+  {
+    "id": "peazip",
+    "legacyId": null,
+    "name": "PeaZip",
+    "cat": "Arquivos e backup",
+    "url": "https://peazip.github.io/",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo desktop",
+    "summary": "Gerenciador de arquivos compactados que cria e extrai muitos formatos e pode criptografar arquivos com senha em formatos compatíveis.",
+    "features": "7z, ZIP e extração de dezenas de formatos; arquivamento; operações de arquivo.",
+    "cautions": "Criptografia depende do formato e da senha; formatos sem autenticação podem oferecer proteção limitada.",
+    "source": "adicionado",
+    "emoji": "▥",
+    "aliases": [],
+    "icon": "assets/icons/apps/peazip.svg",
+    "keywords": [
+      "aplicativo",
+      "desktop",
+      "arquivos",
+      "e",
+      "backup"
+    ]
+  },
+  {
+    "id": "scrcpy",
+    "legacyId": null,
+    "name": "scrcpy",
+    "cat": "Administração Android",
+    "url": "https://github.com/Genymobile/scrcpy",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo desktop",
+    "summary": "Espelha e controla a tela de um Android a partir do computador por USB ou rede, usando ADB sem exigir root na maioria dos casos.",
+    "features": "Baixa latência; teclado e mouse; captura; conexão USB/Wi-Fi.",
+    "cautions": "É executado no desktop, não um app Android; depuração ADB deve ser desativada quando não utilizada.",
+    "source": "adicionado",
+    "emoji": "⌘",
+    "aliases": [
+      "ScrSpy",
+      "Scr Spy"
+    ],
+    "icon": "assets/icons/apps/scrcpy.svg",
+    "keywords": [
+      "aplicativo",
+      "desktop",
+      "administração",
+      "android"
+    ]
+  },
+  {
+    "id": "thc-hydra",
+    "legacyId": null,
+    "name": "THC Hydra",
+    "cat": "Auditoria de senhas",
+    "url": "https://github.com/vanhauser-thc/thc-hydra",
+    "platforms": [
+      "Linux",
+      "macOS"
+    ],
+    "kind": "CLI",
+    "summary": "Ferramenta para testar credenciais em protocolos de rede durante auditorias autorizadas de autenticação.",
+    "features": "Teste de políticas de senha; vários protocolos; automação de avaliação.",
+    "cautions": "Ataques podem bloquear contas e infringir leis ou termos; somente em ambientes autorizados.",
+    "source": "adicionado",
+    "emoji": "⛨",
+    "aliases": [
+      "Hydra",
+      "password cracker"
+    ],
+    "icon": "assets/icons/apps/thc-hydra.svg",
+    "keywords": [
+      "cli",
+      "auditoria",
+      "de",
+      "senhas"
+    ]
+  },
+  {
+    "id": "freefilesync",
+    "legacyId": null,
+    "name": "FreeFileSync",
+    "cat": "Arquivos e backup",
+    "url": "https://freefilesync.org/",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo desktop",
+    "summary": "Compara diretórios e sincroniza arquivos entre discos, pastas locais, unidades de rede e destinos compatíveis.",
+    "features": "Sincronização bidirecional/espelho; detecção de mudanças; agendamento.",
+    "cautions": "Não equivale a backup versionado em todos os modos; erros de exclusão podem se propagar.",
+    "source": "adicionado",
+    "emoji": "▥",
+    "aliases": [],
+    "icon": "assets/icons/apps/freefilesync.svg",
+    "keywords": [
+      "aplicativo",
+      "desktop",
+      "arquivos",
+      "e",
+      "backup"
+    ]
+  },
+  {
+    "id": "libretranslate",
+    "legacyId": null,
+    "name": "LibreTranslate",
+    "cat": "Tradução e utilidades",
+    "url": "https://libretranslate.com/",
+    "platforms": [
+      "Web",
+      "Linux",
+      "Windows",
+      "macOS",
+      "Servidor"
+    ],
+    "kind": "Serviço web/Auto-hospedado",
+    "summary": "API e interface de tradução baseada em software aberto, que pode ser hospedada localmente para evitar enviar textos a serviços de terceiros.",
+    "features": "Tradução entre idiomas; API; operação própria, inclusive offline após instalar modelos.",
+    "cautions": "Instância pública pode registrar solicitações; privacidade offline depende da configuração local.",
+    "source": "adicionado",
+    "emoji": "文",
+    "aliases": [],
+    "icon": "assets/icons/apps/libretranslate.svg",
+    "keywords": [
+      "serviço",
+      "web/auto-hospedado",
+      "tradução",
+      "e",
+      "utilidades"
+    ]
+  },
+  {
+    "id": "de1984-firewall",
+    "legacyId": null,
+    "name": "De1984 Firewall",
+    "cat": "Firewall e rede",
+    "url": "https://github.com/dorumrr/de1984",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Firewall e gerenciador de pacotes para Android com diferentes métodos de controle de rede, incluindo modo baseado em VPN local.",
+    "features": "Controle por aplicativo; regras de rede; gerenciamento de componentes.",
+    "cautions": "No modo VPN ocupa o slot VPN do Android e pode conflitar com Tailscale; alguns modos exigem privilégios adicionais.",
+    "source": "adicionado",
+    "emoji": "⛨",
+    "aliases": [],
+    "icon": "assets/icons/apps/de1984-firewall.svg",
+    "keywords": [
+      "aplicativo",
+      "firewall",
+      "e",
+      "rede"
+    ]
+  },
+  {
+    "id": "rethinkdns",
+    "legacyId": null,
+    "name": "RethinkDNS",
+    "cat": "Firewall e rede",
+    "url": "https://rethinkdns.com/",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Firewall e resolvedor DNS para Android com monitoramento de conexões, bloqueio de domínios e recursos de proxy/VPN.",
+    "features": "Regras de apps; DNS criptografado; monitor de conexões.",
+    "cautions": "O modo de VPN local compete com outros serviços VPN Android, exceto integrações configuradas e compatíveis.",
+    "source": "adicionado",
+    "emoji": "⛨",
+    "aliases": [],
+    "icon": "assets/icons/apps/rethinkdns.svg",
+    "keywords": [
+      "aplicativo",
+      "firewall",
+      "e",
+      "rede"
+    ]
+  },
+  {
+    "id": "zipxtract",
+    "legacyId": null,
+    "name": "ZipXtract",
+    "cat": "Arquivos e backup",
+    "url": "https://github.com/WirelessAlien/ZipXtract",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Gerenciador de arquivos compactados aberto para extrair ZIP, RAR, TAR, 7z e outros formatos diretamente no Android.",
+    "features": "Extração; formatos múltiplos; suporte a arquivos criptografados conforme tipo.",
+    "cautions": "Não confundir extração com backup; suporte a formatos proprietários pode depender de bibliotecas específicas.",
+    "source": "adicionado",
+    "emoji": "▥",
+    "aliases": [],
+    "icon": "assets/icons/apps/zipxtract.svg",
+    "keywords": [
+      "aplicativo",
+      "arquivos",
+      "e",
+      "backup"
+    ]
+  },
+  {
+    "id": "tellyscope",
+    "legacyId": null,
+    "name": "Tellyscope",
+    "cat": "Administração Android",
+    "url": "https://github.com/man15h/tellyscope",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Controla manutenção de Android TV, Google TV e Fire TV pelo celular via ADB na rede local, incluindo instalação e remoção de apps.",
+    "features": "Gerenciar apps de TV; transferir arquivos; debloat; sem PC e sem root.",
+    "cautions": "Requer configuração de depuração na TV; remover pacotes importantes pode causar falhas.",
+    "source": "adicionado",
+    "emoji": "⌘",
+    "aliases": [],
+    "icon": "assets/icons/apps/tellyscope.svg",
+    "keywords": [
+      "aplicativo",
+      "administração",
+      "android"
+    ]
+  },
+  {
+    "id": "ytdlnis",
+    "legacyId": null,
+    "name": "YTDLnis",
+    "cat": "Downloads e mídia",
+    "url": "https://github.com/deniscerri/ytdlnis",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Aplicativo Android que utiliza yt-dlp para salvar áudio e vídeo de sites suportados com opções de formato e qualidade.",
+    "features": "Filas; legendas; extração de áudio; modelos de download.",
+    "cautions": "Respeite direitos autorais e termos das fontes; suporte a sites pode mudar a qualquer momento.",
+    "source": "adicionado",
+    "emoji": "↓",
+    "aliases": [],
+    "icon": "assets/icons/apps/ytdlnis.svg",
+    "keywords": [
+      "aplicativo",
+      "downloads",
+      "e",
+      "mídia"
+    ]
+  },
+  {
+    "id": "privacy-flip",
+    "legacyId": null,
+    "name": "Privacy Flip",
+    "cat": "Privacidade Android",
+    "url": "https://github.com/dorumrr/privacyFlip",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Automatiza controles de privacidade do Android conforme o dispositivo é bloqueado/desbloqueado, dependendo de permissões e versão.",
+    "features": "Automação de sensores; exceções por aplicativo; controle por estado.",
+    "cautions": "Algumas funções exigem root ou privilégios de administração; nem todo bloqueio de rede está disponível sem root.",
+    "source": "adicionado",
+    "emoji": "◌",
+    "aliases": [
+      "privacy flip"
+    ],
+    "icon": "assets/icons/apps/privacy-flip.svg",
+    "keywords": [
+      "aplicativo",
+      "privacidade",
+      "android"
+    ]
+  },
+  {
+    "id": "sd-maid-2-se",
+    "legacyId": null,
+    "name": "SD Maid 2/SE",
+    "cat": "Manutenção Android",
+    "url": "https://github.com/d4rken-org/sdmaid-se",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Ferramenta de limpeza e manutenção do Android voltada a arquivos residuais, cache acessível e organização do armazenamento.",
+    "features": "Analisar arquivos; identificar sobras; manutenção do sistema.",
+    "cautions": "Android moderno limita acesso a dados de outros apps; confirme itens antes de apagar.",
+    "source": "adicionado",
+    "emoji": "✧",
+    "aliases": [
+      "SD Mais SE",
+      "SD Maid SE"
+    ],
+    "icon": "assets/icons/apps/sd-maid-2-se.svg",
+    "keywords": [
+      "aplicativo",
+      "manutenção",
+      "android"
+    ]
+  },
+  {
+    "id": "canta",
+    "legacyId": null,
+    "name": "Canta",
+    "cat": "Administração Android",
+    "url": "https://github.com/samolego/Canta",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Interface para remover aplicativos preinstalados do usuário Android, frequentemente em conjunto com Shizuku, sem root.",
+    "features": "Desinstalação de bloatware para usuário atual; listas com alertas.",
+    "cautions": "Remover pacotes de sistema essenciais pode quebrar funções; faça lista de restauração antes.",
+    "source": "adicionado",
+    "emoji": "⌘",
+    "aliases": [],
+    "icon": "assets/icons/apps/canta.svg",
+    "keywords": [
+      "aplicativo",
+      "administração",
+      "android"
+    ]
+  },
+  {
+    "id": "shizuku",
+    "legacyId": null,
+    "name": "Shizuku",
+    "cat": "Administração Android",
+    "url": "https://shizuku.rikka.app/",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo/Serviço",
+    "summary": "Permite que apps autorizados acessem APIs do sistema por um serviço iniciado via depuração sem root em aparelhos compatíveis.",
+    "features": "Integração com ferramentas avançadas; permissões delegadas; execução via depuração.",
+    "cautions": "A configuração precisa ser refeita em alguns reinícios e conceder acesso indevido eleva riscos.",
+    "source": "adicionado",
+    "emoji": "⌘",
+    "aliases": [],
+    "icon": "assets/icons/apps/shizuku.svg",
+    "keywords": [
+      "aplicativo/serviço",
+      "administração",
+      "android"
+    ]
+  },
+  {
+    "id": "libretorrent",
+    "legacyId": null,
+    "name": "LibreTorrent",
+    "cat": "Downloads e mídia",
+    "url": "https://github.com/proninyaroslav/libretorrent",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Cliente BitTorrent de código aberto para Android, com suporte a arquivos .torrent e links magnet.",
+    "features": "Gerenciar torrents; seleção de arquivos; transferências no celular.",
+    "cautions": "IP pode ser visível a outros pares; use apenas conteúdo que tenha direito de compartilhar/baixar.",
+    "source": "adicionado",
+    "emoji": "↓",
+    "aliases": [],
+    "icon": "assets/icons/apps/libretorrent.svg",
+    "keywords": [
+      "aplicativo",
+      "downloads",
+      "e",
+      "mídia"
+    ]
+  },
+  {
+    "id": "comaps",
+    "legacyId": null,
+    "name": "CoMaps",
+    "cat": "Mapas",
+    "url": "https://www.comaps.app/",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Aplicativo aberto de mapas e navegação offline baseado em OpenStreetMap, projetado com foco em privacidade.",
+    "features": "Mapas offline; rotas para carro, caminhada e bicicleta; pontos de interesse.",
+    "cautions": "Exige baixar mapas e atualizar bases periodicamente; disponibilidade de recursos varia por região.",
+    "source": "adicionado",
+    "emoji": "⌖",
+    "aliases": [],
+    "icon": "assets/icons/apps/comaps.svg",
+    "keywords": [
+      "aplicativo",
+      "mapas"
+    ]
+  },
+  {
+    "id": "atak-civ",
+    "legacyId": null,
+    "name": "ATAK-CIV",
+    "cat": "Mapas e coordenação",
+    "url": "https://github.com/TAK-Product-Center/atak-civ",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Cliente Android de consciência situacional com mapas, objetos CoT, posições de equipe e suporte a servidores TAK.",
+    "features": "Marcadores; mapas offline; posições compartilhadas; interoperabilidade TAK.",
+    "cautions": "Configuração de servidor/certificados pode ser complexa; publicar localização sem controle expõe a equipe.",
+    "source": "adicionado",
+    "emoji": "⌖",
+    "aliases": [],
+    "icon": "assets/icons/apps/atak-civ.svg",
+    "keywords": [
+      "aplicativo",
+      "mapas",
+      "e",
+      "coordenação"
+    ]
+  },
+  {
+    "id": "obtainium",
+    "legacyId": null,
+    "name": "Obtainium",
+    "cat": "Distribuição de apps",
+    "url": "https://github.com/ImranR98/Obtainium",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Gerencia atualizações de aplicativos Android diretamente das páginas de releases de projetos como GitHub e GitLab.",
+    "features": "Monitorar lançamentos; instalar APKs; evitar lojas intermediárias.",
+    "cautions": "Verifique assinaturas e origem dos APKs; nem todos os projetos publicam releases instaláveis.",
+    "source": "adicionado",
+    "emoji": "⬡",
+    "aliases": [],
+    "icon": "assets/icons/apps/obtainium.svg",
+    "keywords": [
+      "aplicativo",
+      "distribuição",
+      "de",
+      "apps"
+    ]
+  },
+  {
+    "id": "accrescent",
+    "legacyId": null,
+    "name": "Accrescent",
+    "cat": "Distribuição de apps",
+    "url": "https://accrescent.app/",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Loja Android",
+    "summary": "Loja de aplicativos Android voltada a distribuição, segurança de atualizações e privacidade, com catálogo selecionado.",
+    "features": "Instalação e atualização de apps; política de distribuição; foco em segurança.",
+    "cautions": "Catálogo menor que grandes lojas; recursos e suporte podem evoluir.",
+    "source": "adicionado",
+    "emoji": "⬡",
+    "aliases": [],
+    "icon": "assets/icons/apps/accrescent.svg",
+    "keywords": [
+      "loja",
+      "android",
+      "distribuição",
+      "de",
+      "apps"
+    ]
+  },
+  {
+    "id": "f-droid",
+    "legacyId": null,
+    "name": "F-Droid",
+    "cat": "Distribuição de apps",
+    "url": "https://f-droid.org/",
+    "platforms": [
+      "Android",
+      "Web"
+    ],
+    "kind": "Loja Android e site",
+    "summary": "Repositório e aplicativo de distribuição de software livre para Android, com informações de origem e builds.",
+    "features": "Buscar apps FOSS; instalar pacotes; receber atualizações.",
+    "cautions": "Versões podem chegar depois das releases originais; verifique avisos anti-features.",
+    "source": "adicionado",
+    "emoji": "⬡",
+    "aliases": [],
+    "icon": "assets/icons/apps/f-droid.svg",
+    "keywords": [
+      "loja",
+      "android",
+      "e",
+      "site",
+      "distribuição",
+      "de"
+    ]
+  },
+  {
+    "id": "fauxx",
+    "legacyId": null,
+    "name": "Fauxx",
+    "cat": "Privacidade Android",
+    "url": "https://github.com/digital-grease/fauxx",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Aplicativo Android que gera atividade sintética para confundir perfis comportamentais usados por publicidade e corretores de dados.",
+    "features": "Atividade fictícia; perfis sintéticos; ajustes de intensidade.",
+    "cautions": "Eficácia anti-rastreamento não é garantida; pode gerar tráfego, gasto de bateria e observação por terceiros.",
+    "source": "adicionado",
+    "emoji": "◌",
+    "aliases": [],
+    "icon": "assets/icons/apps/fauxx.svg",
+    "keywords": [
+      "aplicativo",
+      "privacidade",
+      "android"
+    ]
+  },
+  {
+    "id": "shelter",
+    "legacyId": null,
+    "name": "Shelter",
+    "cat": "Isolamento Android",
+    "url": "https://f-droid.org/packages/net.typeblog.shelter/",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Cria e administra perfil de trabalho Android para separar apps e dados do perfil pessoal, usando recursos do próprio sistema.",
+    "features": "Clonagem/isolamento; congelamento de apps; perfis de trabalho.",
+    "cautions": "Não é uma VM completa; ainda compartilha kernel e hardware; só pode haver um perfil de trabalho em muitos aparelhos.",
+    "source": "adicionado",
+    "emoji": "▦",
+    "aliases": [],
+    "icon": "assets/icons/apps/shelter.svg",
+    "keywords": [
+      "aplicativo",
+      "isolamento",
+      "android"
+    ]
+  },
+  {
+    "id": "insular-island",
+    "legacyId": null,
+    "name": "Insular (Island)",
+    "cat": "Isolamento Android",
+    "url": "https://f-droid.org/packages/com.oasisfeng.island.fdroid/",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Fork aberto do Island para isolar aplicativos em um perfil de trabalho e controlar execução de apps separados.",
+    "features": "Perfil de trabalho; isolamento de dados; clonagem de app.",
+    "cautions": "Concorre com Shelter pelo mesmo perfil de trabalho; isolamento não protege contra comprometimento do SO.",
+    "source": "adicionado",
+    "emoji": "▦",
+    "aliases": [
+      "Insular",
+      "Island"
+    ],
+    "icon": "assets/icons/apps/insular-island.svg",
+    "keywords": [
+      "aplicativo",
+      "isolamento",
+      "android"
+    ]
+  },
+  {
+    "id": "orbot",
+    "legacyId": null,
+    "name": "Orbot",
+    "cat": "Tor e anonimato",
+    "url": "https://orbot.app/",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "App para encaminhar tráfego de aplicativos Android selecionados por Tor e fornecer conexões proxy em modos compatíveis.",
+    "features": "Tor no Android; proxy SOCKS; roteamento de apps.",
+    "cautions": "Modos VPN competem com Tailscale e firewalls VPN; nem todos os aplicativos funcionam por Tor.",
+    "source": "adicionado",
+    "emoji": "◉",
+    "aliases": [],
+    "icon": "assets/icons/apps/orbot.svg",
+    "keywords": [
+      "aplicativo",
+      "tor",
+      "e",
+      "anonimato"
+    ]
+  },
+  {
+    "id": "tailscale",
+    "legacyId": null,
+    "name": "Tailscale",
+    "cat": "Firewall e rede",
+    "url": "https://tailscale.com/",
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Rede privada mesh construída sobre WireGuard para conectar dispositivos autorizados mesmo atrás de NAT ou CGNAT.",
+    "features": "Rede privada; MagicDNS; acesso remoto; ACLs.",
+    "cautions": "Exige autenticação e coordenação de controle; no Android usa uma interface VPN por perfil.",
+    "source": "adicionado",
+    "emoji": "⛨",
+    "aliases": [],
+    "icon": "assets/icons/apps/tailscale.svg",
+    "keywords": [
+      "aplicativo",
+      "firewall",
+      "e",
+      "rede"
+    ]
+  },
+  {
+    "id": "aster-mail",
+    "legacyId": null,
+    "name": "Aster Mail",
+    "cat": "Email e aliases",
+    "url": "https://github.com/Aster-Privacy/Aster-Android",
+    "platforms": [
+      "Android",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Cliente de e-mail Android criptografado do projeto Aster, com foco em PGP, aliases e domínios personalizados.",
+    "features": "Criptografia de e-mail; organização de contas; aliases conforme serviço.",
+    "cautions": "Verifique a maturidade, interoperabilidade PGP e modelo de confiança antes de uso sensível.",
+    "source": "adicionado",
+    "emoji": "✉",
+    "aliases": [],
+    "icon": "assets/icons/apps/aster-mail.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "email",
+      "aliases"
+    ]
+  },
+  {
+    "id": "ente-locker",
+    "legacyId": null,
+    "name": "Ente Locker",
+    "cat": "Criptografia",
+    "url": "https://ente.io/locker/",
+    "platforms": [
+      "Android",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Cofre criptografado para guardar informações pessoais e registros importantes em ambiente protegido.",
+    "features": "Itens confidenciais; sincronização criptografada; acesso por conta Ente.",
+    "cautions": "Não substitui um gerenciador de senhas completo em todos os cenários; avalie plano e recuperação.",
+    "source": "adicionado",
+    "emoji": "🔒",
+    "aliases": [
+      "Enter Lock",
+      "Ente Lock"
+    ],
+    "icon": "assets/icons/apps/ente-locker.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "criptografia"
+    ]
+  },
+  {
+    "id": "ente-photos",
+    "legacyId": null,
+    "name": "Ente Photos",
+    "cat": "Nuvem",
+    "url": "https://ente.io/",
+    "platforms": [
+      "Android",
+      "Linux",
+      "Windows",
+      "macOS",
+      "Web"
+    ],
+    "kind": "Aplicativo e web",
+    "summary": "Serviço de backup, organização e compartilhamento de fotos e vídeos com criptografia ponta a ponta.",
+    "features": "Galeria; upload automático; organização; compartilhamento seguro.",
+    "cautions": "O armazenamento pode exigir assinatura; cuide das chaves de recuperação e permissões de compartilhamento.",
+    "source": "adicionado",
+    "emoji": "☁",
+    "aliases": [
+      "Enter Photos"
+    ],
+    "icon": "assets/icons/apps/ente-photos.svg",
+    "keywords": [
+      "aplicativo",
+      "e",
+      "web",
+      "nuvem"
+    ]
+  },
+  {
+    "id": "aegis-authenticator",
+    "legacyId": null,
+    "name": "Aegis Authenticator",
+    "cat": "Autenticação",
+    "url": "https://getaegis.app/",
+    "platforms": [
+      "Android"
+    ],
+    "kind": "Aplicativo",
+    "summary": "Gerador de códigos TOTP/HOTP de código aberto para Android, com cofre local criptografado e backup exportável.",
+    "features": "2FA offline; backup cifrado; importação de tokens.",
+    "cautions": "Backup da base é essencial; TOTP não impede phishing em tempo real.",
+    "source": "adicionado",
+    "emoji": "🔑",
+    "aliases": [],
+    "icon": "assets/icons/apps/aegis-authenticator.svg",
+    "keywords": [
+      "aplicativo",
+      "autenticação"
+    ]
+  },
+  {
+    "id": "freetakserver",
+    "legacyId": null,
+    "name": "FreeTAKServer",
+    "cat": "Mapas e coordenação",
+    "url": "https://github.com/FreeTAKTeam/FreeTakServer",
+    "platforms": [
+      "Linux",
+      "Servidor"
+    ],
+    "kind": "Servidor/Auto-hospedado",
+    "summary": "Servidor TAK aberto que conecta clientes compatíveis e compartilha eventos CoT, posições e informações de equipe.",
+    "features": "Servidor próprio; integração ATAK-CIV; API e coordenação.",
+    "cautions": "Android Edition antiga é experimental e não confirmada em Android 13; configuração moderna é preferível em Linux.",
+    "source": "adicionado",
+    "emoji": "⌖",
+    "aliases": [],
+    "icon": "assets/icons/apps/freetakserver.svg",
+    "keywords": [
+      "servidor/auto-hospedado",
+      "mapas",
+      "e",
+      "coordenação"
+    ]
+  },
+  {
+    "id": "openmeshtak",
+    "legacyId": null,
+    "name": "OpenMeshTak",
+    "cat": "Mapas e coordenação",
+    "url": "https://openmeshtak.github.io/openmeshtak-docs/",
+    "platforms": [
+      "Linux",
+      "Servidor"
+    ],
+    "kind": "Servidor/Auto-hospedado",
+    "summary": "Conjunto autogerenciado de ferramentas para infraestrutura TAK e integrações, como fluxos com rádio mesh quando suportados.",
+    "features": "Gestão própria; serviços web; extensões e integrações.",
+    "cautions": "Implantação típica em Linux/Docker; não é aplicativo Android independente e exige administração.",
+    "source": "adicionado",
+    "emoji": "⌖",
+    "aliases": [],
+    "icon": "assets/icons/apps/openmeshtak.svg",
+    "keywords": [
+      "servidor/auto-hospedado",
+      "mapas",
+      "e",
+      "coordenação"
+    ]
   }
 ]
