@@ -22,7 +22,8 @@
     "keywords": [
       "aplicativo",
       "navegadores"
-    ]
+    ],
+    "brandIcon": "assets/brand/tor-browser.svg"
   },
   {
     "id": "firefox",
@@ -47,7 +48,8 @@
     "keywords": [
       "aplicativo",
       "navegadores"
-    ]
+    ],
+    "brandIcon": "assets/brand/firefox.svg"
   },
   {
     "id": "firefox-focus",
@@ -123,7 +125,8 @@
       "e",
       "web",
       "nuvem"
-    ]
+    ],
+    "brandIcon": "assets/brand/proton-drive.svg"
   },
   {
     "id": "proton-mail",
@@ -152,7 +155,8 @@
       "web",
       "email",
       "aliases"
-    ]
+    ],
+    "brandIcon": "assets/brand/proton-mail.svg"
   },
   {
     "id": "tuta",
@@ -183,7 +187,8 @@
       "web",
       "email",
       "aliases"
-    ]
+    ],
+    "brandIcon": "assets/brand/tuta.svg"
   },
   {
     "id": "simplelogin",
@@ -209,7 +214,8 @@
       "web",
       "email",
       "aliases"
-    ]
+    ],
+    "brandIcon": "assets/brand/simplelogin.svg"
   },
   {
     "id": "mullvad",
@@ -234,7 +240,8 @@
     "keywords": [
       "aplicativo",
       "vpn"
-    ]
+    ],
+    "brandIcon": "assets/brand/mullvad.svg"
   },
   {
     "id": "proton-vpn",
@@ -259,7 +266,8 @@
     "keywords": [
       "aplicativo",
       "vpn"
-    ]
+    ],
+    "brandIcon": "assets/brand/proton-vpn.svg"
   },
   {
     "id": "xeovo",
@@ -307,7 +315,8 @@
       "serviço",
       "web",
       "buscadores"
-    ]
+    ],
+    "brandIcon": "assets/brand/startpage.svg"
   },
   {
     "id": "searxng",
@@ -333,7 +342,8 @@
     "keywords": [
       "web/auto-hospedado",
       "buscadores"
-    ]
+    ],
+    "brandIcon": "assets/brand/searxng.svg"
   },
   {
     "id": "monero",
@@ -358,7 +368,8 @@
     "keywords": [
       "protocolo/carteiras",
       "criptomoedas"
-    ]
+    ],
+    "brandIcon": "assets/brand/monero.svg"
   },
   {
     "id": "cake-wallet",
@@ -515,7 +526,8 @@
       "e",
       "extensão",
       "senhas"
-    ]
+    ],
+    "brandIcon": "assets/brand/bitwarden.svg"
   },
   {
     "id": "keepassxc",
@@ -540,7 +552,8 @@
       "aplicativo",
       "desktop",
       "senhas"
-    ]
+    ],
+    "brandIcon": "assets/brand/keepassxc.svg"
   },
   {
     "id": "veracrypt",
@@ -590,7 +603,8 @@
     "keywords": [
       "aplicativo",
       "criptografia"
-    ]
+    ],
+    "brandIcon": "assets/brand/cryptomator.svg"
   },
   {
     "id": "picocrypt-ng",
@@ -639,7 +653,8 @@
     "keywords": [
       "aplicativo",
       "mensagens"
-    ]
+    ],
+    "brandIcon": "assets/brand/signal.svg"
   },
   {
     "id": "threema",
@@ -661,7 +676,8 @@
     "keywords": [
       "aplicativo",
       "mensagens"
-    ]
+    ],
+    "brandIcon": "assets/brand/threema.svg"
   },
   {
     "id": "session",
@@ -686,7 +702,8 @@
     "keywords": [
       "aplicativo",
       "mensagens"
-    ]
+    ],
+    "brandIcon": "assets/brand/session.svg"
   },
   {
     "id": "bitchat",
@@ -733,7 +750,8 @@
       "projeto/serviço",
       "web",
       "mapas"
-    ]
+    ],
+    "brandIcon": "assets/brand/openstreetmap.svg"
   },
   {
     "id": "osmand",
@@ -779,7 +797,8 @@
       "operacional",
       "live",
       "sistemas"
-    ]
+    ],
+    "brandIcon": "assets/brand/tails.svg"
   },
   {
     "id": "ishredder",
@@ -1072,7 +1091,8 @@
       "osint",
       "e",
       "exposição"
-    ]
+    ],
+    "brandIcon": "assets/brand/have-i-been-pwned.svg"
   },
   {
     "id": "behind-the-email",
@@ -1419,7 +1439,8 @@
     "keywords": [
       "cli",
       "metadados"
-    ]
+    ],
+    "brandIcon": "assets/brand/ffmpeg.svg"
   },
   {
     "id": "dangerzone",
@@ -1558,7 +1579,8 @@
       "serviço",
       "web",
       "ameaças"
-    ]
+    ],
+    "brandIcon": "assets/brand/virustotal.svg"
   },
   {
     "id": "metadefender",
@@ -1944,7 +1966,8 @@
       "tradução",
       "e",
       "utilidades"
-    ]
+    ],
+    "brandIcon": "assets/brand/libretranslate.svg"
   },
   {
     "id": "de1984-firewall",
@@ -2254,7 +2277,8 @@
       "distribuição",
       "de",
       "apps"
-    ]
+    ],
+    "brandIcon": "assets/brand/obtainium.svg"
   },
   {
     "id": "accrescent",
@@ -2306,7 +2330,8 @@
       "site",
       "distribuição",
       "de"
-    ]
+    ],
+    "brandIcon": "assets/brand/f-droid.svg"
   },
   {
     "id": "fauxx",
@@ -2429,7 +2454,8 @@
       "firewall",
       "e",
       "rede"
-    ]
+    ],
+    "brandIcon": "assets/brand/tailscale.svg"
   },
   {
     "id": "aster-mail",
@@ -2535,7 +2561,8 @@
     "keywords": [
       "aplicativo",
       "autenticação"
-    ]
+    ],
+    "brandIcon": "assets/brand/aegis-authenticator.svg"
   },
   {
     "id": "freetakserver",

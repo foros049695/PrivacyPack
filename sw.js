@@ -1,22 +1,11 @@
-/* PrivacyPack PWA — all user data is local. Service worker caches only same-origin assets. */
-const CACHE='privacypack-atlas-v3-20261122-r2';
+/* PrivacyPack v4 service worker — cache same origin, optionally cache remote favicons. */
+const CACHE='privacypack-wiki-v4-r1', ICON_CACHE='privacypack-remote-icons-v4';
 const ESSENTIAL=['./','./index.html','./app.js','./style.css','./catalog.json','./categories.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./assets-manifest.json'];
-self.addEventListener('install',event=>event.waitUntil((async()=>{
- const cache=await caches.open(CACHE);
- await cache.addAll(ESSENTIAL);
- let assets=[];try{const response=await fetch('./assets-manifest.json',{cache:'no-store'});assets=await response.json()}catch{}
- for(let i=0;i<assets.length;i+=25){await Promise.all(assets.slice(i,i+25).map(url=>cache.add(url).catch(()=>{})))}
- await self.skipWaiting();
-})()));
-self.addEventListener('activate',event=>event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(key=>key.startsWith('privacypack-atlas-')&&key!==CACHE).map(k=>caches.delete(k)));await self.clients.claim()})()));
-self.addEventListener('fetch',event=>{
- const request=event.request;if(request.method!=='GET')return;
- const url=new URL(request.url);if(url.origin!==self.location.origin)return;
- if(request.mode==='navigate'){
- event.respondWith((async()=>{try{const response=await fetch(request);if(response.ok){const cache=await caches.open(CACHE);cache.put('./index.html',response.clone());return response}return response}catch{return (await caches.match('./index.html'))||Response.error()}})());return;
- }
- if(url.pathname.endsWith('/catalog.json')||url.pathname.endsWith('/categories.json')){
- event.respondWith((async()=>{const old=await caches.match(request);try{const resp=await fetch(request,{cache:'no-store'});if(resp.ok){const cache=await caches.open(CACHE);cache.put(request,resp.clone());return resp}return old||resp}catch{return old||Response.error()}})());return;
- }
- event.respondWith((async()=>{const cached=await caches.match(request);if(cached)return cached;try{const response=await fetch(request);if(response.ok){const cache=await caches.open(CACHE);cache.put(request,response.clone())}return response}catch{return Response.error()}})());
+self.addEventListener('install',e=>e.waitUntil((async()=>{let c=await caches.open(CACHE);await c.addAll(ESSENTIAL);let files=[];try{let r=await fetch('./assets-manifest.json');if(r.ok)files=await r.json()}catch{}for(let i=0;i<files.length;i+=30){await Promise.all(files.slice(i,i+30).map(file=>c.add(file).catch(()=>{})))}await self.skipWaiting()})()));
+self.addEventListener('activate',e=>e.waitUntil((async()=>{let keys=await caches.keys();await Promise.all(keys.filter(k=>(k.startsWith('privacypack-wiki-v4-')||k.startsWith('privacypack-atlas-'))&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim()})()));
+self.addEventListener('fetch',e=>{let req=e.request;if(req.method!=='GET')return;const u=new URL(req.url);
+ if(u.origin!==self.location.origin){if(req.destination==='image'&&((u.hostname==='www.google.com'&&u.pathname==='/s2/favicons')||(u.hostname==='github.com'&&u.pathname.endsWith('.png')))){e.respondWith((async()=>{let c=await caches.open(ICON_CACHE),v=await c.match(req);if(v)return v;try{let r=await fetch(req);if(r.ok||r.type==='opaque')c.put(req,r.clone());return r}catch{return Response.error()}})())}return}
+ if(req.mode==='navigate'){e.respondWith((async()=>{try{let r=await fetch(req);if(r.ok)(await caches.open(CACHE)).put('./index.html',r.clone());return r}catch{return await caches.match('./index.html')||Response.error()}})());return}
+ if(u.pathname.endsWith('/catalog.json')||u.pathname.endsWith('/categories.json')){e.respondWith((async()=>{let cached=await caches.match(req);try{let r=await fetch(req,{cache:'no-store'});if(r.ok)(await caches.open(CACHE)).put(req,r.clone());return r}catch{return cached||Response.error()}})());return}
+ e.respondWith((async()=>{let r=await caches.match(req);if(r)return r;try{let n=await fetch(req);if(n.ok)(await caches.open(CACHE)).put(req,n.clone());return n}catch{return Response.error()}})())
 });

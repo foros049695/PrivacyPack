@@ -1,39 +1,58 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080f1d"><meta name="color-scheme" content="dark">
-<meta name="description" content="PrivacyPack Atlas: catálogo PWA interativo de privacidade, segurança e tecnologia, com mapa 3D, ferramentas por plataforma, fichas e comparador offline.">
-<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/svg+xml" href="./assets/icon.svg"><link rel="apple-touch-icon" href="./assets/icon-192.png">
-<title>PrivacyPack — Atlas 3D</title><link rel="stylesheet" href="./style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#111111">
+<meta name="description" content="PrivacyPack Wiki: mapa 3D interativo de ferramentas de privacidade, segurança e Android/Linux/Windows, com fichas detalhadas, ícones e comparador offline.">
+<link rel="icon" href="./assets/icon.svg" type="image/svg+xml"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./assets/icon-192.png"><link rel="stylesheet" href="./style.css">
+<title>PrivacyPack Wiki — Mapa de ferramentas</title>
 </head>
 <body>
-<div id="app">
-<header class="header shell">
-  <a class="brand" href="#atlas" aria-label="PrivacyPack — início"><span class="brand-mark" aria-hidden="true">◈</span><span><span class="brand-name">PRIVACY<span>PACK</span></span><small>ATLAS / SECURITY KNOWLEDGE GRAPH</small></span></a>
-  <div class="header-right"><span id="onlineChip" class="chip online"><span class="pulse-dot"></span><span id="onlineText">OFFLINE READY</span></span><button id="installBtn" class="button primary mini" hidden>＋ Instalar PWA</button><button id="settingsBtn" class="icon-btn" aria-label="Configurações" title="Configurações">⚙</button></div>
+<div class="app" id="app">
+<header class="topbar">
+ <button id="homeBtn" class="brand" title="Início: PrivacyPack" aria-label="Reiniciar árvore"><span class="brand-sign">⬡</span><span><b>PRIVACY<span>PACK</span></b><small>THE OPEN PRIVACY WIKI</small></span></button>
+ <span class="top-breadcrumb" id="breadcrumb">SYSTEM <span>›</span> PRIVACYPACK</span>
+ <div class="top-actions">
+  <button id="libraryBtn" class="top-icon" title="Catálogo e favoritos" aria-label="Abrir catálogo">▦ <span class="smallhide">Catálogo</span></button>
+  <button id="settingsBtn" class="top-icon" title="Configurações" aria-label="Configurações">⚙</button>
+  <button id="installBtn" class="install" hidden>＋ Instalar</button>
+ </div>
 </header>
-<main class="shell">
- <section class="intro" aria-label="Visão geral"><div><div class="eyebrow"><span class="pulse-dot"></span> PERSONAL PRIVACY OS <span class="sep">/</span> KNOWLEDGE NETWORK</div><h1>Seu arsenal digital.<br><em>Um universo interativo.</em></h1><p>Explore as ferramentas, abra ramificações, examine fichas completas e compare alternativas — com acesso offline ao catálogo.</p></div><div class="intro-stats"><div><strong id="statTools">104</strong><span>Ferramentas</span></div><div><strong id="statGroups">30</strong><span>Constelações</span></div><div><strong>3D</strong><span>Motion graph</span></div></div></section>
- <nav id="platformNav" class="platform-nav" aria-label="Filtrar por sistema operacional"></nav>
- <section class="explorer" id="atlas" aria-label="Atlas interativo">
-  <div class="graph-pane">
-   <div class="graph-top"><div><span class="eyebrow">NEURAL MAP / LIVE MODEL</span><h2>Constelações de ferramentas</h2></div><div class="graph-actions"><button class="tiny-btn" id="motionBtn" title="Ativar/desativar movimento">◉ Motion: ON</button><button class="tiny-btn" id="resetCam" title="Recentrar mapa">⤾ Recentrar</button><button class="tiny-btn square" id="zoomOut" aria-label="Diminuir zoom">−</button><button class="tiny-btn square" id="zoomIn" aria-label="Aumentar zoom">＋</button></div></div>
-   <div class="canvas-wrap" id="canvasWrap"><canvas id="universe" aria-label="Mapa 3D com categorias e aplicativos: arraste para girar, toque em um nó para expandir. Use a lista abaixo para navegação acessível." tabindex="0"></canvas><div class="graph-vignette" aria-hidden="true"></div><div class="orbit-label top-left"><span class="live-pip"></span><span id="graphState">30 SETORES · 104 NÓS</span></div><div class="orbit-label bottom-left">ARRASTE PARA GIRAR <b>·</b> PINÇA / RODA PARA ZOOM <b>·</b> TOQUE PARA EXPANDIR</div><div class="axis-badge">X <span>Y</span> Z / 3D</div><div id="tooltip" class="map-tooltip" hidden></div></div>
-   <div class="graph-bottom"><span><i></i> <span id="activePath">PRIVACYPACK / TODOS OS SETORES</span></span><button id="collapseGraph" class="text-btn">Recolher ramificações ✕</button></div>
+<main class="workspace">
+ <section id="graphScene" class="graph-scene" aria-label="Árvore de ferramentas interativa">
+  <canvas id="graphCanvas" tabindex="0" aria-label="Mapa espacial interativo; use cliques para expandir plataformas, categorias e aplicativos; arraste para mover; use Shift e arraste para girar; roda ou pinça para zoom"></canvas>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="graph-head">
+   <label class="search-shell"><span class="search-glyph">⌕</span><input id="searchBox" type="search" placeholder="Buscar apps, recursos, categorias..." autocomplete="off" aria-label="Buscar ferramentas"><kbd id="clearSearch" title="Limpar busca">ESC</kbd></label>
+   <div id="filters" class="filters" aria-label="Filtrar por plataforma"></div>
+   <div id="categoryTags" class="topic-filters" aria-label="Filtros de função"></div>
   </div>
-  <aside class="inspector" id="inspector" aria-label="Detalhes da seleção"><div id="inspectorContent" class="inspector-body"><div class="empty-detail"><span class="empty-symbol">⬡</span><span class="eyebrow">EXPLORAR / INTERAGIR</span><h3>Selecione um nó</h3><p>Clique em uma categoria para revelar seus aplicativos. Depois selecione um ícone para abrir sua ficha, comparar alternativas e salvar observações.</p><div class="detail-hint">↗ Clique em um nó luminoso no mapa</div></div></div></aside>
+  <div class="map-stamp"><span class="map-live"></span> <span id="mapStatus">WIKI / LOADING</span></div>
+  <div id="tooltip" class="tooltip" hidden></div>
+  <div class="map-bottom">
+   <div class="helper"><span class="help-dot">?</span><span><b>Explore a árvore.</b> Toque nos círculos para abrir os ramos.<small>Arraste para mover · Shift + arraste para orbitar · pinça para zoom</small></span><button id="hideTip" aria-label="Ocultar instruções">×</button></div>
+   <div class="control-group"><button id="zoomOut" title="Diminuir zoom" aria-label="Diminuir zoom">−</button><button id="zoomIn" title="Aumentar zoom" aria-label="Aumentar zoom">＋</button><span></span><button id="centerBtn" title="Recentrar">Center</button><button id="expandBtn" title="Expandir árvore">Expand all</button><button id="collapseBtn" title="Recolher árvore">Collapse</button></div>
+   <div class="axis"><b>X</b><span>Y</span><em>Z</em> <small>3D</small></div>
+  </div>
  </section>
- <section class="browse" id="catalogo" aria-label="Catálogo de ferramentas"><div class="section-head"><div><div class="eyebrow">01 / THE LIBRARY</div><h2>Catálogo completo</h2><p>Descubra soluções por função, plataforma e finalidade.</p></div><div id="resultCount" class="result-count">Carregando...</div></div>
- <div class="search-row"><label class="search-box" aria-label="Pesquisar ferramentas"><span>⌕</span><input id="searchInput" type="search" placeholder="Pesquisar nome, recurso, risco, plataforma..." autocomplete="off"></label><select id="categorySelect" aria-label="Filtrar por categoria"><option value="">Todas as categorias</option></select><button class="button" id="favOnlyBtn">☆ Favoritos</button><button class="button" id="compareTrayBtn">⚖ Comparar <span id="compareNum">0</span></button></div>
- <div class="category-chips" id="categoryChips" aria-label="Categorias"></div><div class="tools-grid" id="toolsGrid"></div><div class="more-wrap"><button class="button more" id="showMore">Mostrar mais ferramentas ↓</button></div>
- </section>
- <section class="system-section"><div class="section-head"><div><div class="eyebrow">02 / OS COMPATIBILITY</div><h2>Visão por plataforma</h2><p>Aplicativos nativos, soluções web, serviços e ferramentas exclusivas.</p></div></div><div class="system-cards" id="systemCards"></div></section>
- <footer><div class="footer-brand">◈ PRIVACY<span>PACK</span><small>ATLAS 3D · V3.0</small></div><p>Pesquisa, fichas e notas offline. Os ícones locais são identificadores gráficos; os favicons externos são opcionais. As descrições são resumos informativos, não garantias de segurança ou anonimato. Use ferramentas de auditoria apenas com autorização.</p><div class="footer-actions"><button id="backupBtn" class="text-btn">↓ Exportar dados</button><button id="restoreBtn" class="text-btn">↑ Importar dados</button><button id="refreshBtn" class="text-btn">↻ Atualizar catálogo</button><input id="restoreInput" type="file" accept="application/json" hidden></div></footer>
+ <aside id="inspector" class="inspector" aria-label="Ficha da ferramenta">
+  <button class="mobile-close" id="mobileClose" aria-label="Fechar ficha">×</button>
+  <div id="sheet" class="sheet-scroll"></div>
+ </aside>
 </main>
-</div>
-<div id="modalOverlay" class="modal-overlay hidden" role="presentation"><section class="modal" id="comparisonModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><span class="eyebrow">COMPETITIVE INTELLIGENCE</span><h2 id="modalTitle">Comparar ferramentas</h2></div><button class="icon-btn" id="modalClose" aria-label="Fechar comparador">✕</button></div><div id="modalContent"></div></section></div>
-<div id="settingsOverlay" class="modal-overlay hidden" role="presentation"><section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settingsTitle"><div class="modal-head"><h2 id="settingsTitle">Configurações do Atlas</h2><button class="icon-btn" id="settingsClose" aria-label="Fechar configurações">✕</button></div><div class="setting-line"><div><strong>Ícones oficiais online</strong><small>Consulta favicons pelo Google; o provedor verá solicitações. Desativado por padrão por privacidade.</small></div><input type="checkbox" id="officialIconToggle" aria-label="Usar favicons externos"></div><div class="setting-line"><div><strong>Motion flow</strong><small>Partículas, anéis e rotações leves em um espaço projetado em 3D.</small></div><input type="checkbox" id="motionToggle" checked aria-label="Habilitar animação"></div><div class="setting-line"><div><strong>Dados locais</strong><small>Favoritos, notas, preferências e comparações ficam apenas neste navegador.</small></div><button class="button danger" id="clearDataBtn">Limpar dados</button></div><div id="cacheStatus" class="settings-note">O catálogo e os ícones identificadores podem ser acessados offline após a primeira visita HTTPS.</div></section></div>
-<div id="toast" class="toast" aria-live="polite" role="status"></div>
+<div id="mobileShade" class="mobile-shade" hidden></div>
+<section id="library" class="overlay" hidden aria-label="Catálogo completo">
+ <div class="drawer"><header class="drawer-header"><div><small>THE LIBRARY / ALL TOOLS</small><h2>Catálogo de ferramentas</h2><p id="libraryCount"></p></div><button id="libraryClose" class="round-close" aria-label="Fechar catálogo">×</button></header>
+ <div class="drawer-controls"><input id="librarySearch" type="search" placeholder="Pesquisar ferramenta, função ou risco"><select id="libraryOS" aria-label="Sistema operacional"><option>Todos</option><option>Android</option><option>Linux</option><option>Windows</option><option>Só Windows</option><option>macOS</option><option>Web</option><option>Servidor</option><option>Live USB</option></select><select id="libraryCategory" aria-label="Categoria"><option value="">Todas as categorias</option></select><label class="fav-check"><input id="libraryFaves" type="checkbox"> ★ Favoritos</label></div>
+ <div id="libraryGrid" class="library-grid"></div></div>
+</section>
+<section id="comparison" class="overlay" hidden aria-label="Comparativo de ferramentas" role="dialog" aria-modal="true"><div class="compare-window"><header class="drawer-header"><div><small>TOOL / VS / TOOL</small><h2>Comparar ferramentas</h2><p>Comparação dentro da mesma categoria, com critérios verificáveis.</p></div><button id="compareClose" class="round-close" aria-label="Fechar comparação">×</button></header><div class="compare-options"><label>Primeira ferramenta<select id="compareA"></select></label><label>Segunda ferramenta<select id="compareB"></select></label></div><div id="compareBody" class="compare-body"></div></div></section>
+<section id="settings" class="overlay" hidden role="dialog" aria-modal="true" aria-label="Configurações"><div class="settings-window"><header class="drawer-header"><div><small>PERSONAL WIKI</small><h2>Configurações</h2></div><button id="settingsClose" class="round-close" aria-label="Fechar configurações">×</button></header>
+ <label class="setting"><span><b>Motion flow e profundidade</b><small>Movimento de partículas, inércia e efeito de perspectiva</small></span><input type="checkbox" id="motionSwitch" checked></label>
+ <label class="setting"><span><b>Ícones reais de serviços online</b><small>Prioriza logos locais; para os demais, consulta favicons de sites, usando um serviço externo. Essa consulta revela o domínio ao provedor.</small></span><input type="checkbox" id="onlineIconsSwitch" checked></label>
+ <label class="setting"><span><b>Salvar ícones para offline</b><small>Pré-carrega os favicons disponíveis para acesso posterior sem internet (o primeiro carregamento requer conexão).</small></span><button id="prefetchBtn">Baixar ícones</button></label>
+ <div class="settings-buttons"><button id="backupBtn">↓ Exportar favoritos e notas</button><button id="restoreBtn">↑ Importar backup</button><button id="refreshBtn">↻ Verificar atualização</button><input id="backupFile" type="file" accept="application/json" hidden></div>
+ <p class="privacy-note">Não coloque senhas, seeds ou chaves privadas nas notas. Os dados ficam no armazenamento local deste navegador; o catálogo é público, mas suas notas não são enviadas ao GitHub.</p><small id="appVersion">PRIVACYPACK / V4</small></div></section>
+<div id="toast" class="toast" aria-live="polite"></div>
 <script src="./app.js" defer></script>
-</body>
-</html>
+</div>
+</body></html>

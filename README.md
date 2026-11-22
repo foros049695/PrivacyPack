@@ -1,87 +1,109 @@
-# PRIVACYPACK / ATLAS 3D — PWA v3.0
+# PrivacyPack Wiki v4 — grafo interativo estilo Distrolinux
 
-Catálogo pessoal de privacidade, segurança e investigação digital para **Android**, **Linux**, **Windows**, **macOS** e ferramentas web. Esta edição tem **104 entradas em 30 categorias**: 73 originais, 29 novas indicadas e FreeTAKServer/OpenMeshTak.
+Aplicação **PWA estática**, sem backend obrigatório, inspirada na **estrutura de navegação** de [DistroLinux Wiki](https://distrolinux.com.br/en/wiki/): grafo espacial em tela cheia, nós esféricos, ramificações, barra superior de pesquisa, controles de zoom e painel lateral fixo. O projeto é independente e não reutiliza o código da referência.
 
-## Funcionalidades
+## O que já está implementado
 
-- Mapa com nós em coordenadas 3D, câmera com perspectiva e rotação por gesto, zoom por pinça, roda ou botões. Profundidade, anéis, ramificações e partículas em movimento. Implementado em Canvas com projeção matemática 3D, **sem WebGL**, para rodar de forma independente e offline em aparelhos modestos. Não é um motor 3D fotorrealista.
-- Clique em uma categoria no mapa para revelar as ferramentas daquela ramificação; clique em um aplicativo para abrir sua ficha. A navegação por catálogo é alternativa acessível ao mapa.
-- Ficha de cada item: explicação prática, recursos, riscos/limitações, tipo de software, plataformas com ícones, link da fonte, favorito e notas privadas locais.
-- Comparador entre **duas ferramentas da mesma categoria**, exibindo objetivos, recursos, plataformas, limitações e fontes lado a lado. Categorias com uma ferramenta não têm par para comparação.
-- Filtros separados **Android**, **Linux**, **Windows**, **Só Windows**, **macOS**, **Web**, **Servidor** e **Live USB**, além de categorias e pesquisa por texto.
-- Ícone em **todos os 104 cartões**, no mapa, nas fichas e nas tabelas de comparação. Os ícones offline são **identificadores próprios em SVG**, não cópias dos logos oficiais; os favicons de sites podem ser ativados nas configurações com aviso de privacidade. Existem também ícones SVG locais para os sistemas operacionais.
-- Favoritos, notas, exportação e importação JSON sem conta. Dados ficam no `localStorage` do navegador. Nunca salve credenciais, segredos ou seeds neste catálogo.
-- PWA com manifesto de instalação e Service Worker que armazena todo o catálogo, a interface e os ícones locais para uso offline. Links externos exigem internet.
-- Botão **Atualizar catálogo** para buscar conteúdo recém-publicado; também existe atualização padrão do service worker. Para atualizar o inventário, modifique os dados e publique novamente no GitHub Pages.
+- **104 entradas catalogadas**, **30 categorias**, filtros por Android, Linux, Windows, "Só Windows", multiplataforma, Web, Servidor e Live USB.
+- Árvore com raiz PrivacyPack → plataforma → categoria → ferramenta, projetada a partir de coordenadas **3D**, com parallax/perspectiva, rotação por Shift + arraste, pan, zoom, movimento de partículas nas conexões, seleção de nós e destaque ativo.
+- **Fichas laterais**: finalidade, recursos, riscos/limitações, compatibilidade, links oficiais, favoritos e notas pessoais.
+- **Comparador na mesma categoria**: recursos, plataformas, modelo, finalidades, limitações e links.
+- **Catálogo completo** pesquisável com filtros, favoritos e seleção direta do app.
+- **PWA instalável**, manifesto, service worker, cache offline de arquivos internos e armazenamento local de notas e favoritos. Backup/exportação/importação JSON.
+- Desktop (painel lateral) e Android (painel móvel estilo bottom sheet).
+- **Ícones**: 27 logotipos vetoriais autênticos de Simple Icons incluídos offline; ícones dos sistemas (Android, Linux, Windows e demais) também estão incluídos. Para os demais projetos, há coleta automática de imagens de apps/repositórios oficiais e favicons de seus sites durante a publicação via GitHub Actions. Se não houver imagem, exibe um pictograma identificador honesto em vez de inventar um logotipo.
 
-## Instalar pelo GitHub Pages (Android, sem computador)
+### Observações importantes sobre os ícones
 
-1. Extraia o ZIP para uma pasta no celular. **Envie o conteúdo interno**, não o arquivo ZIP nem uma pasta externa, para a raiz do repositório GitHub.
-2. Crie um repositório **público**, por exemplo `PrivacyPack`. Entre em `Add file → Upload files` e envie os arquivos da pasta, **preservando a estrutura dos diretórios** (`assets/icons/apps`, `assets/icons/platforms`, etc.). Enviar centenas de arquivos pela interface móvel pode ser trabalhoso; nesse caso é mais fácil usar um computador com `git` ou o app de gerenciamento de repositórios de sua preferência.
-3. Abra `Settings → Pages` no repositório. Em `Build and deployment`, selecione `Deploy from a branch`, branch `main`, diretório `/(root)` e salve.
-4. Acesse `https://SEU_USUARIO.github.io/PrivacyPack/` (substitua pelo seu usuário e nome do repositório). A publicação pode levar algum tempo.
-5. No **Chrome Android**, abra a URL HTTPS, entre no menu `⋮` e toque em `Instalar aplicativo` (ou `Adicionar à tela inicial`). O instalador PWA exige HTTPS, exceto `localhost`.
-6. Abra a PWA uma vez com conexão para o Service Worker armazenar as centenas de arquivos. Em seguida ative **Modo avião**, reabra e confira os cartões, ícones, comparador, notas e mapa. Os links externos não abrem offline.
+O catálogo possui `brandIcon` para as 27 marcas cuja geometria pública foi disponibilizada no pacote. As outras 77 dependem de um arquivo de imagem no `assets/site/` gerado no **build conectado à internet**: o workflow pesquisa preferencialmente ícones reais em F-Droid, Google Play, repositório oficial e site do projeto; se necessário, usa favicon ou avatar do editor. Assim, não há promessa de que todos os 104 desenhos baixados sejam *exatamente* o ícone instalado no Android ou desktop. Você pode auditar o relatório `logo-sources.json` gerado no deploy, e substituir qualquer arquivo por um PNG/SVG oficial local. Um favicon de site pode não coincidir com o ícone de um aplicativo.
 
-**Nota**: O upload web do GitHub muitas vezes não permite enviar uma árvore inteira com dezenas de subpastas facilmente no celular. Uma maneira confiável é enviar o projeto com Git no PC:
+Serviços externos de logos podem receber a solicitação do domínio quando a opção "Ícones reais de serviços online" estiver ligada. Desligue-a em Configurações para não realizar essas requisições ao visualizar o catálogo. Marcas e logotipos pertencem aos seus titulares.
+
+## Como executar localmente (MX Linux)
+
+Na pasta com `index.html`:
 
 ```bash
-unzip PrivacyPack_Atlas_v3.zip
-cd PrivacyPack_Atlas_v3
-git init
-git add .
-git commit -m "Publicar PrivacyPack Atlas v3"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/PrivacyPack.git
-git push -u origin main
-```
-
-Não sobrescreva um repositório existente por engano. Se já possuir PrivacyPack, copie os arquivos para ele e crie commit normalmente.
-
-## Executar localmente no Linux
-
-```bash
-cd PrivacyPack_Atlas_v3
 python3 -m http.server 8080
 ```
-Abra `http://localhost:8080/` no Firefox/Chrome. `file://` não disponibiliza service worker nem permite `fetch` do JSON normalmente.
 
-## Arquivos principais
+Abra **http://localhost:8080/**. Não abra `index.html` com `file://`, pois o catálogo é carregado com `fetch`.
 
-| Arquivo | Função |
-|---|---|
-| `index.html` | Estrutura sem frameworks externos |
-| `style.css` | Interface responsiva |
-| `app.js` | Catálogo, comparação, navegação, Canvas 3D, notas e favoritos |
-| `catalog.json` | Descrições individuais e referências de cada aplicativo |
-| `categories.json` | Categorias, cores e quantidades |
-| `assets/icons/apps/*.svg` | Identificadores locais únicos para todas as ferramentas |
-| `assets/icons/platforms/*.svg` | Identificação de plataformas |
-| `assets/icon-192.png`, `icon-512.png` | Ícones de instalação Android/Desktop |
-| `sw.js` | Cache offline de arquivos estáticos e catálogo |
-| `tools/build_catalog.py` | Fonte editável dos dados e geração dos SVGs |
+## Como publicar no GitHub Pages com ícones locais
 
-## Compatibilidade e segurança
+**Recomendado:** um repositório GitHub público novo, por exemplo `PrivacyPack`.
 
-- A lista de plataformas é informativa e pode diferir por versão do aplicativo, arquitetura, plano e disponibilidade do projeto. Serviços web são marcados como **Web** e não devem ser confundidos com apps nativos. `scrcpy` roda no computador e controla um Android. FTK Imager está marcado Windows somente. Tails e DBAN são ferramentas **Live USB**.
-- A edição antiga do FreeTAKServer Android não é assumida compatível com Android 13; para uso estável, o servidor moderno é classificado como Linux/Servidor.
-- Algumas ferramentas Android implementam VPN local; Android normalmente permite uma VPN por perfil, portanto podem competir com Tailscale. Shizuku/Canta podem requerer depuração e permissões especiais. Não remova pacotes essenciais sem plano de recuperação.
-- O projeto não transmite notas ou favoritos a terceiros. **Ativar ícones oficiais online** consulta o serviço de favicons do Google e pode revelar consultas; a opção fica **desativada por padrão**.
-- O catálogo não executa nenhum programa listado, não instala apps por conta própria, não faz varreduras nem acessa seus arquivos.
-- ATENÇÃO: PWA **não é cofre criptografado**. O backup JSON contém notas em texto puro. Não armazene senhas, chaves privadas ou informações sensíveis.
-- As URLs devem ser revisitadas periodicamente para evitar alterações de propriedade ou fornecedores. Os resumos não substituem auditorias técnicas independentes.
+1. Extraia o ZIP da V4 em uma pasta. Confirme que `index.html`, `app.js`, `style.css`, `catalog.json`, `.github/workflows/pages.yml` estão na raiz da pasta extraída.
+2. Crie um repositório público no GitHub. Para o primeiro envio, usando um terminal Linux instalado com Git:
 
-## Testes recomendados
+   ```bash
+   cd ~/Downloads/PrivacyPack_Wiki_v4
+   git init
+   git add .
+   git commit -m "PrivacyPack Wiki v4"
+   git branch -M main
+   git remote add origin https://github.com/SEU_USUARIO/PrivacyPack.git
+   git push -u origin main
+   ```
 
-- [ ] O mapa aparece, roda com arraste, dá zoom e abre ramificações.
-- [ ] A ficha de PeaZip mostra Linux/Windows/macOS; scrcpy também aparece em Linux/Windows/macOS, mas não Android como instalação nativa.
-- [ ] O filtro **Só Windows** exibe apenas ferramentas exclusivas, como FTK Imager.
-- [ ] Os ícones de cada app e sistema aparecem offline.
-- [ ] A comparação dentro de **Firewall e rede** mostra RethinkDNS, De1984 Firewall e Tailscale com alertas de compatibilidade.
-- [ ] As notas persistem ao recarregar e são exportadas no JSON.
-- [ ] O catálogo funciona offline depois do primeiro carregamento completo.
-- [ ] O manifesto PWA instala no Android via endereço HTTPS.
+   **Atenção:** estes comandos são para um repositório **vazio**. Se você já tem um repositório PrivacyPack, faça backup, use `git clone`, copie os arquivos novos por cima, revise `git status` e depois `git add/commit/push`. Não faça `push --force`.
 
-## Como alterar o catálogo
+3. Abra seu repositório → **Settings → Pages → Build and deployment → Source: GitHub Actions**. Não deixe a configuração antiga "Deploy from a branch" se quiser usar a etapa automática de coleta de ícones.
+4. Abra **Actions → Build & publish PrivacyPack Wiki** e acompanhe a execução. O workflow tenta baixar os ícones de origem, gera o manifesto offline e publica a aplicação. **Se um site não permitir download de sua marca, o catálogo continua operacional.**
+5. A URL será aproximadamente `https://SEU_USUARIO.github.io/PrivacyPack/`.
+6. No Android, abra essa URL no Chrome e use o menu **⋮ → Instalar app** ou **Adicionar à tela inicial**.
 
-Atualize `tools/build_catalog.py` e execute `python3 tools/build_catalog.py`. Isso regenera JSONs e SVGs. Para acrescentar um novo app, inclua os dados no campo `NEW`, atualize a contagem de validação na própria ferramenta e gere novamente. Recrie `assets-manifest.json` com os caminhos de ícones e altere a versão `CACHE` em `sw.js` para que todos os usuários recebam os novos arquivos.
+**Modo simples sem GitHub Actions:** publique todos os arquivos pelo Pages "Deploy from a branch → main → /(root)". O site e seus 27 vetores locais funcionarão; outros logos usarão favicons online quando permitidos. O workflow automático é preferível para ter mais ícones no cache offline.
+
+## Controles
+
+| Ação | Desktop | Android |
+|---|---|---|
+| Abrir ramo | Clique no círculo da plataforma/categoria | Toque no círculo |
+| Abrir ficha | Clique no ícone do app | Toque no ícone do app |
+| Mover árvore | Arraste | Arraste com um dedo |
+| Girar com profundidade | Shift + arrastar; botão direito + arrastar | — |
+| Zoom | Roda do mouse ou botões − / + | Pinça ou botões − / + |
+| Centralizar | Center | Center |
+| Abrir todos | Expand all | Expand all |
+| Recolher | Collapse | Collapse |
+| Buscar | Campo superior | Campo superior |
+| Comparar | Botão na ficha | Botão na ficha |
+| Notas / favoritos | Ficha, armazenamento local | Ficha, armazenamento local |
+| Restaurar backup | ⚙ → Importar backup | ⚙ → Importar backup |
+
+## Dados e privacidade
+
+As notas e os favoritos são salvos em `localStorage` no dispositivo atual. Sem contas e sem banco de dados remoto. O arquivo de backup JSON **não é criptografado** e deve ser guardado em um local protegido. Não use notas para senhas ou seeds.
+
+O site funciona offline após a primeira visita e a instalação do service worker. Links externos, novos favicons ainda não armazenados e verificações de atualização precisam de internet.
+
+O mapa é um renderizador Canvas 2D **com projeção matemática tridimensional** (coordenadas X/Y/Z, perspectiva, rotação e profundidade), não um motor WebGL. É propositalmente leve para celulares Android, sem dependências JavaScript externas.
+
+## Personalizar o catálogo
+
+Edite `catalog.json` para acrescentar novas ferramentas. Cada entrada contém `id`, `name`, `cat`, `url`, `platforms`, `kind`, `summary`, `features`, `cautions`, `emoji` e ícones opcionais. As categorias estão em `categories.json`. Depois execute:
+
+```bash
+python3 tools/make_manifest.py
+```
+
+Ícones locais oficiais ou autorizados podem ser colocados em `assets/site/id-da-ferramenta.png` e associados com `localSiteIcon` no JSON. Para executar a coleta no próprio PC com internet:
+
+```bash
+python3 tools/fetch_site_icons.py
+python3 tools/resolve_icons.py
+python3 tools/make_manifest.py
+```
+
+Se você modificar `app.js`, `style.css` ou o catálogo, atualize o identificador `CACHE` de `sw.js` para garantir que clientes recebam a nova versão.
+
+## Compatibilidade / testes realizados
+
+Testes automatizados da interface foram feitos no Chromium headless para resoluções de **1440×900** (desktop) e **390×844** (Android), incluindo carregamento de 104 registros, seleção de plataforma, catálogo completo, abertura de ficha, comparação e painel móvel. Não houve erros de JavaScript nesses fluxos.
+
+**Não testado em dispositivo real:** processo de instalação PWA no Android 13, download de todos os ícones externos, conectividade do GitHub Pages e capacidades do navegador em dispositivos específicos. A coleta das marcas reais depende das políticas de rede de seus sites de origem; algumas poderão continuar sem imagem.
+
+## Licenças e créditos
+
+Estrutura e código desta aplicação: exemplo independente de implementação web. As descrições do catálogo são informativas e não garantem anonimato. O espaço de navegação é inspirado funcionalmente na visualização de árvore do Distrolinux Wiki, sem copiar scripts, layout CSS ou arquivos do projeto. Formas de ícones de marca: Simple Icons; marcas registradas pertencem aos respectivos titulares. Outros favicons e logos são fornecidos pelos projetos de origem, para identificação editorial.
