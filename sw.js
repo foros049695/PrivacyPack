@@ -1,11 +1,11 @@
-/* PrivacyPack v4 service worker — cache same origin, optionally cache remote favicons. */
-const CACHE='privacypack-wiki-v4-r1', ICON_CACHE='privacypack-remote-icons-v4';
-const ESSENTIAL=['./','./index.html','./app.js','./style.css','./catalog.json','./categories.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./assets-manifest.json'];
+/* PrivacyPack v5 service worker — cache same origin, optionally cache remote favicons. */
+const CACHE='privacypack-wiki-v5-r1', ICON_CACHE='privacypack-remote-icons-v5';
+const ESSENTIAL=['./','./index.html','./app.js','./style.css','./catalog.json','./categories.json','./install-guides.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./assets-manifest.json'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{let c=await caches.open(CACHE);await c.addAll(ESSENTIAL);let files=[];try{let r=await fetch('./assets-manifest.json');if(r.ok)files=await r.json()}catch{}for(let i=0;i<files.length;i+=30){await Promise.all(files.slice(i,i+30).map(file=>c.add(file).catch(()=>{})))}await self.skipWaiting()})()));
-self.addEventListener('activate',e=>e.waitUntil((async()=>{let keys=await caches.keys();await Promise.all(keys.filter(k=>(k.startsWith('privacypack-wiki-v4-')||k.startsWith('privacypack-atlas-'))&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim()})()));
+self.addEventListener('activate',e=>e.waitUntil((async()=>{let keys=await caches.keys();await Promise.all(keys.filter(k=>((k.startsWith('privacypack-wiki-v4-')||k.startsWith('privacypack-wiki-v5-'))||k.startsWith('privacypack-atlas-'))&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim()})()));
 self.addEventListener('fetch',e=>{let req=e.request;if(req.method!=='GET')return;const u=new URL(req.url);
  if(u.origin!==self.location.origin){if(req.destination==='image'&&((u.hostname==='www.google.com'&&u.pathname==='/s2/favicons')||(u.hostname==='github.com'&&u.pathname.endsWith('.png')))){e.respondWith((async()=>{let c=await caches.open(ICON_CACHE),v=await c.match(req);if(v)return v;try{let r=await fetch(req);if(r.ok||r.type==='opaque')c.put(req,r.clone());return r}catch{return Response.error()}})())}return}
  if(req.mode==='navigate'){e.respondWith((async()=>{try{let r=await fetch(req);if(r.ok)(await caches.open(CACHE)).put('./index.html',r.clone());return r}catch{return await caches.match('./index.html')||Response.error()}})());return}
- if(u.pathname.endsWith('/catalog.json')||u.pathname.endsWith('/categories.json')){e.respondWith((async()=>{let cached=await caches.match(req);try{let r=await fetch(req,{cache:'no-store'});if(r.ok)(await caches.open(CACHE)).put(req,r.clone());return r}catch{return cached||Response.error()}})());return}
+ if(u.pathname.endsWith('/catalog.json')||u.pathname.endsWith('/categories.json')||u.pathname.endsWith('/install-guides.json')){e.respondWith((async()=>{let cached=await caches.match(req);try{let r=await fetch(req,{cache:'no-store'});if(r.ok)(await caches.open(CACHE)).put(req,r.clone());return r}catch{return cached||Response.error()}})());return}
  e.respondWith((async()=>{let r=await caches.match(req);if(r)return r;try{let n=await fetch(req);if(n.ok)(await caches.open(CACHE)).put(req,n.clone());return n}catch{return Response.error()}})())
 });

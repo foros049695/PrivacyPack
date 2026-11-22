@@ -1,28 +1,33 @@
-# Instalar PrivacyPack Wiki no Android pelo GitHub
+# Instalação do PrivacyPack Wiki V5 no Android via GitHub Pages
 
-O PWA não precisa de APK, root ou Termux para ser instalado. **O primeiro deploy precisa estar no GitHub Pages com HTTPS**.
+## 1. Atualize seu repositório
 
-## Se você já tem um repositório PrivacyPack
+1. Baixe e extraia `PrivacyPack_Wiki_v5.zip`.
+2. Abra seu repositório existente do PrivacyPack no GitHub.
+3. Faça backup do conteúdo atual, depois envie os arquivos novos, mantendo as pastas `assets/`, `tools/` e `.github/`.
+4. Confirme que **`install-guides.json` fica na raiz**, junto de `index.html` e `sw.js`. Se faltar, o catálogo abre mas as instruções não serão exibidas.
+5. Faça commit. Não substitua o histórico usando `push --force`.
 
-Recomendado: atualize os arquivos usando Git no computador. Faça backup antes de substituir a versão anterior. Preserve `.github/workflows/pages.yml`. Depois, em GitHub → **Settings → Pages → Source**, marque **GitHub Actions** (não "Deploy from a branch"). Isso permite que o deploy também pesquise ícones dos projetos e inclua cópias offline, quando disponíveis.
+## 2. Publique o site
 
-## Instalação
+Em `Settings → Pages`, selecione **GitHub Actions** como fonte de publicação. Na aba `Actions`, acompanhe `Build & publish PrivacyPack Wiki` até aparecer como concluído com sucesso.
 
-1. Acesse seu repositório GitHub no navegador e abra **Actions**. A execução **Build & publish PrivacyPack Wiki** deve aparecer em verde. Se não existir, confirme que a pasta `.github/workflows/` foi enviada ao repositório.
-2. Abra **Settings → Pages**. Confira a URL `https://SEU_USUARIO.github.io/PrivacyPack/` e abra-a no Chrome do Android.
-3. No Chrome, toque em **⋮** e selecione **Instalar app** (ou **Adicionar à tela inicial** e depois **Instalar**, dependendo do navegador).
-4. Confirme e abra o ícone PrivacyPack na tela inicial.
-5. Abra ⚙ e toque em **Baixar ícones** enquanto estiver conectado à internet para aumentar a chance de mantê-los no cache offline.
-6. Ative o modo avião e confirme que o mapa, as fichas, a pesquisa e suas notas continuam disponíveis. Links externos e ícones não armazenados exigem internet.
+Caso prefira **Deploy from a branch**, selecione `main` e `/(root)`; nesse modo o PWA funciona, mas a coleta automática de logos não acontece.
 
-## Atualizar a versão antiga
+## 3. Instale no celular
 
-Se o Android continuar exibindo uma versão anterior, abra o site online no Chrome, use ⚙ → **Verificar atualização** e recarregue o site. Alguns navegadores podem precisar fechar e abrir o PWA novamente. Seus favoritos e notas podem ser exportados pelo menu ⚙ antes da atualização.
+1. Abra a URL do GitHub Pages usando o Chrome Android, por exemplo `https://SEU_USUARIO.github.io/PrivacyPack/`.
+2. Menu ⋮ → `Instalar aplicativo` ou `Adicionar à tela inicial`.
+3. Abra o ícone PrivacyPack na tela inicial e selecione Android na barra de sistemas.
+4. Escolha um aplicativo e toque em `↓ Instruções de instalação`.
+5. Selecione o Android na grade, depois a versão desejada, e siga as instruções específicas da ficha.
 
-## Se não aparecer "Instalar app"
+## 4. Testes e solução de problemas
 
-Confira que o site foi publicado em **HTTPS** e que o `manifest.webmanifest`, `sw.js`, `assets/icon-192.png` e `assets/icon-512.png` estão acessíveis. Chrome pode mostrar **Adicionar à tela inicial** em vez de **Instalar**. Não é necessário converter o site em APK.
+- Se continuar na V4, recarregue a página conectado e verifique se o workflow publicou a V5. Fechar/reabrir o PWA pode ajudar a ativar o novo service worker.
+- Se o guia não aparecer, confira em `https://SEU_USUARIO.github.io/PrivacyPack/install-guides.json` se o arquivo existe e é um JSON válido.
+- Se os ícones não forem obtidos, verifique a configuração de logos no menu do aplicativo. Em modo offline, o app só pode mostrar os logos já incorporados/cached.
+- Para conferir offline, abra o PWA conectado uma vez, depois ative modo avião e recarregue. A ficha e os passos devem continuar disponíveis.
+- O aplicativo **não executa comandos no Android ou no Linux**. Copie os comandos e use-os no dispositivo e terminal corretos somente após revisão.
 
-## Privacidade
-
-O conteúdo do catálogo e o código da interface publicados no GitHub são **públicos**. Suas notas e favoritos ficam **locais** no navegador e não fazem parte do repositório. Não anote senhas ou chaves privadas.
+Mais detalhes: [README.md](README.md).

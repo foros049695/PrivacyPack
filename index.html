@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#111111">
 <meta name="description" content="PrivacyPack Wiki: mapa 3D interativo de ferramentas de privacidade, segurança e Android/Linux/Windows, com fichas detalhadas, ícones e comparador offline.">
 <link rel="icon" href="./assets/icon.svg" type="image/svg+xml"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./assets/icon-192.png"><link rel="stylesheet" href="./style.css">
-<title>PrivacyPack Wiki — Mapa de ferramentas</title>
+<title>PrivacyPack Wiki V5 — Mapa e instalações</title>
 </head>
 <body>
 <div class="app" id="app">
@@ -46,12 +46,26 @@
  <div id="libraryGrid" class="library-grid"></div></div>
 </section>
 <section id="comparison" class="overlay" hidden aria-label="Comparativo de ferramentas" role="dialog" aria-modal="true"><div class="compare-window"><header class="drawer-header"><div><small>TOOL / VS / TOOL</small><h2>Comparar ferramentas</h2><p>Comparação dentro da mesma categoria, com critérios verificáveis.</p></div><button id="compareClose" class="round-close" aria-label="Fechar comparação">×</button></header><div class="compare-options"><label>Primeira ferramenta<select id="compareA"></select></label><label>Segunda ferramenta<select id="compareB"></select></label></div><div id="compareBody" class="compare-body"></div></div></section>
+
+<section id="installGuide" class="overlay" hidden aria-labelledby="installTitle" role="dialog" aria-modal="true">
+ <div class="install-window">
+  <header class="drawer-header install-heading">
+   <div><small>PRIVACYPACK / INSTALLATION DESK</small><h2 id="installTitle">Instalar ferramenta</h2><p id="installSubtitle">Selecione a plataforma compatível</p></div>
+   <button id="installClose" class="round-close" aria-label="Fechar instruções">×</button>
+  </header>
+  <div id="installPlatformGrid" class="install-platform-grid" role="group" aria-label="Escolher sistema operacional"></div>
+  <div id="installMethod" class="install-method" aria-live="polite"></div>
+  <div id="installVersions" class="install-versions" role="group" aria-label="Escolher versão ou método de instalação"></div>
+  <article id="installInstructions" class="install-instructions" aria-live="polite"></article>
+  <footer class="install-footer">Comandos são exibidos apenas nos métodos documentados. Revise os comandos antes de executar; procedimentos gerais podem variar por edição, arquitetura ou fornecedor.</footer>
+ </div>
+</section>
 <section id="settings" class="overlay" hidden role="dialog" aria-modal="true" aria-label="Configurações"><div class="settings-window"><header class="drawer-header"><div><small>PERSONAL WIKI</small><h2>Configurações</h2></div><button id="settingsClose" class="round-close" aria-label="Fechar configurações">×</button></header>
  <label class="setting"><span><b>Motion flow e profundidade</b><small>Movimento de partículas, inércia e efeito de perspectiva</small></span><input type="checkbox" id="motionSwitch" checked></label>
  <label class="setting"><span><b>Ícones reais de serviços online</b><small>Prioriza logos locais; para os demais, consulta favicons de sites, usando um serviço externo. Essa consulta revela o domínio ao provedor.</small></span><input type="checkbox" id="onlineIconsSwitch" checked></label>
  <label class="setting"><span><b>Salvar ícones para offline</b><small>Pré-carrega os favicons disponíveis para acesso posterior sem internet (o primeiro carregamento requer conexão).</small></span><button id="prefetchBtn">Baixar ícones</button></label>
  <div class="settings-buttons"><button id="backupBtn">↓ Exportar favoritos e notas</button><button id="restoreBtn">↑ Importar backup</button><button id="refreshBtn">↻ Verificar atualização</button><input id="backupFile" type="file" accept="application/json" hidden></div>
- <p class="privacy-note">Não coloque senhas, seeds ou chaves privadas nas notas. Os dados ficam no armazenamento local deste navegador; o catálogo é público, mas suas notas não são enviadas ao GitHub.</p><small id="appVersion">PRIVACYPACK / V4</small></div></section>
+ <p class="privacy-note">Não coloque senhas, seeds ou chaves privadas nas notas. Os dados ficam no armazenamento local deste navegador; o catálogo é público, mas suas notas não são enviadas ao GitHub.</p><small id="appVersion">PRIVACYPACK / V5</small></div></section>
 <div id="toast" class="toast" aria-live="polite"></div>
 <script src="./app.js" defer></script>
 </div>
